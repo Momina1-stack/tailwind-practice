@@ -1,0 +1,81 @@
+<div class="main bg-rgb(33, 37, 41)">
+  <div class="app-header font-[12px] ">
+    <div
+      class="header bg-[linear-gradient(180deg,#000000,#000000_42%,#000000)] font-sans font-normal h-[100px] leading-18px overflow-x-clip pl-[5px] pr-[5px] relative text-start">
+      <div class="first-div h-[100px] w-full">
+        <div class="row flex flex-nowrap ml-[-9px] mr-[-9px] mt-0 max-w-full w-full justify-between">
+          <div class="icon-logo flex max-w-full pl-[9px] pr-0 pe-0 items-center w-[50%]">
+            <div class="both inline-flex items-center ps-2 relative">
+              <div class="logo inline-flex items-center font-[23px] mr-1.5 leading-[23px] ">
+                <img src="home-icon.png" class="w-[25.88px] h-6 mr-1 filter invert brightness-0" alt="">
+                <img src="dayfair-logo.svg" alt="" class="h-[65px] w-[100px] ">
+              </div>
+            </div>
+          </div>
+          <div class="br-2 w-[25%] invisible"></div>
+          <div class="row-2 flex items-center justify-end text-right leading-[23px] font-[14px] w-[25%]">
+            <div class="row flex flex-wrap ml-[-9px] mr-[-9px] mt-0 w-[110%] h-9 ">
+              <div class="empty p-[3px] flex items-center justify-end leading-[23px] h-9 w-full gap-5">
+                <ul class="desktopviewbutton flex items-center mt-2.5 mr-[17px] gap-5 mb-1.5">
+                  <div class="search float-left flex justify-center space-x-5 ">
+                    <input id="searchEvent" name="searchEvent" placeholder="All Events" type="text" autocomplete="off"
+                      class="search-input-hide bg-white h-[38px] invisible lg:visible  transition-all duration-300 ease-in-out
+                       overflow-hidden focus:outline-none" [ngClass]="isSearchOpen ? 'w-[180px]' : 'w-0'">
+                    <div class="flex mt-2.5  ">
+                      <img src="search-icon.svg" alt=""
+                        class="text-[rgb(255,255,255)] w-[25.88px] h-6 font-[24px] 
+                    ml-2.5 float-right mr-[5px] filter invert brightness-0 invisible lg:visible cursor-pointer shrink-0 " (click)="toggleSearch()">
+                    </div>
+                  </div>
+                  <li class="float-left">
+                    <a href="" class="rule-link text-white invisible lg:visible"><b
+                        class="font-[16px] h-6 hover:underline">Rules</b></a>
+                  </li>
+                </ul>
+                <!-- </div> -->
+                <div class="btn w-[89px]">
+
+                  <button (click)="openLogin()" class="px-6 bg-[linear-gradient(-180deg,#f4b501_0%,#f68700_100%)] border-black
+                 rounded-[3.875px] max-w-[230px] h-[30px] font-[14px] text-[rgb(0,0,0)] text-sm ">LOGIN</button>
+                </div>
+                <div *ngIf="showLoginForm" class="fixed inset-0 bg-black/60 flex items-center justify-center z-50">
+                  <div class="bg-white w-full max-w-[300px] p-4 rounded-lg shadow-lg">
+                    <input type="text" placeholder="User Name"
+                      class="w-full mb-2 px-3 py-2  text-sm border-black border" />
+
+                    <input type="password" placeholder="Password"
+                      class="w-full mb-3 px-3 py-2 text-sm border border-black" />
+                    <div class="login-btn flex items-center justify-center">
+                      <button
+                        class="w-full bg-[linear-gradient(-180deg,#f4b501_0%,#f68700_100%)] text-black rounded font-semibold border-black border text-2 flex justify-center gap-2 ">
+                        Login
+                        <img src="/sign-in.svg" alt="" class="w-[15.6px] ">
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div
+          class="header-bottom min-h-[35px] pr-[5px] pl-[5px] ml-1 relative flex flex-wrap  mr-[-9px] mt-0 max-w-full visible lg:invisible">
+          <div class="div1 block max-w-[50%] basis-[50%] lg:hidden">
+            <div class="search-box-container absolute left-0 z-10 top-[5px] pl-[7px] ">
+              <div
+                class="search-box bg-[linear-gradient(-180deg,#fff_0%,#fff_100%)] p-0 rounded-[30px] float-left font-[13px]">
+                <!-- <input id="searchEventmobile" type="text" autocomplete="off" class="search_input text-black leading-[25px]
+                 pr-px"> -->
+              </div>
+              <div
+                class="search-icon bg-white h-[25px] w-[25px] float-right flex justify-center items-center -mr-1 rounded-[50%]">
+                <img src="search.icon.png" alt="" class="font-[13px] text-black w-[13px] h-3.5">
+              </div>
+            </div>
+          </div>
+          <div class="div-2"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

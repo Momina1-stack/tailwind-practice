@@ -1,0 +1,122 @@
+<!-- <p>navbar works!</p> -->
+ <!-- <div class="app-header-nav lg:block">
+  <div class="header-bottom invisible lg:visible bg-[linear-gradient(-180deg,#f4b501_0%,#f68700_100%) pt-1.5 pb-1.5 ml-0]">
+    <div class="navbar flex flex-col md:flex-row md:items-center md:justify-between px-4 py-2 bg-gray-800 text-white relative">
+      <button class="navbar-toggler relative flex flex-wrap items-center justify-between pt-1.5 pb-1.5">
+        <span class="navbar-togglerl-icon"></span>
+      </button>
+    </div>
+
+  </div>
+ </div> -->
+ <div class="nav-mobile visible lg:hidden ">
+  <ul class="nav nav-tabs game-nav-bar lg:hidden   bg-[linear-gradient(180deg,#030a12,#444647_42%,#58595a)] rounded-0 border-b-0 overflow-x-auto overflow-y-hidden relative flex-nowrap flex shadow pb-[11px] ">
+    <li class="nav-item activeNav grow flex justify-center shrink text-center border-t-2 border-r border-white pt-[11px] pb-[11px] mb-auto text-[12px] leading-[18px] text-white">
+      <a  class="nav-link position-relative " id="10">
+      <div class="heartBeat bg-[gradient-to-t from-sky-500 to-indigo-500] animate-pulse blink-text">INPLAY </div>
+        </a>
+      </li>
+      <li class="nav-item grow flex justify-center shrink text-center border-t-2 border-r mx-auto border-white pt-[11px] pb-[11px] mb-auto text-[12px] leading-[18px] text-white">
+        <a class="nav-link position-relative  pt-0 pb-0 rounded-0" id="11">
+        <div class="pl-4  border-white " >EXCHANGE </div>
+      </a>
+    </li>
+    <li class="nav-item grow flex shrink text-center border-t-2 border-r border-white pt-[11px] pb-[11px] mb-auto text-[12px] text-white">
+      <a  class="nav-link position-relative" id="16">
+        <div class="heartBeat animate-pulse pl-4  blink-text">LIVE CASINO </div>
+          </a>
+        </li>
+        <li class="nav-item grow flex shrink text-center border-t-2 border-white pt-[11px] pb-[11px] mb-auto text-[12px] text-white">
+          <a class="nav-link position-relative " id="98">
+            <div class="pl-4 "> TIPS &amp; PREVIEWS </div>
+          </a>
+        </li>
+      </ul>
+ </div>
+
+ <!-- next nav -->
+  <div class="visible lg:hidden">
+    <ul class="sportsListNav bg-[linear-gradient(180deg,#030a12,#444647_42%,#58595a)] mb-0 pl-0 flex overflow-x-scroll visible lg:invisible">
+      <li class="min-w-fit no-underline">
+        <a >
+          <div class="SportsNavItems position-relative SportsItemsActive flex flex-col text-[12px] pb-[3px] pt-[9px] pl-[9px] pr-[9px] text-white"   
+          [ngClass]="{'bg-cricket-gradient': activeTab === 'cricket'}"
+          (click)="setActive('cricket')">
+          <div>
+            <div class="sports-img">
+              <img src="ball.svg" class="sprite icon-cricket-white filter invert brightness-0 h-5 w-5 ">
+            </div>
+            <div class="sportsNAV-text ">Cricket</div>
+          </div>
+        </div>
+      </a>
+    </li>
+    <li >
+      <a >
+      <div class="SportsNavItems position-relative flex flex-col text-[12px] pb-[3px] pt-[9px] pl-[9px] pr-[9px] text-white"
+       [ngClass]="{'bg-soccer-gradient': activeTab === 'soccer'}"
+          (click)="setActive('soccer')">
+        <div >
+          <div  class="sports-img">
+            <img  src="sports_soccer_24dp_1F1F1F_FILL0_wght400_GRAD0_opsz24.svg" class="sprite icon-soccer-white filter invert brightness-0 h-5 w-5"></div>
+            <div class="sportsNAV-text">Soccer</div>
+          </div>
+        </div>
+      </a>
+    </li>
+    <li>
+      <a >
+        <div class="SportsNavItems position-relative flex flex-col text-[12px] pb-[3px] pt-[9px] pl-[9px] pr-[9px] text-white"
+         [ngClass]="{'bg-tennis-gradient': activeTab === 'tennis'}"
+          (click)="setActive('tennis')">
+          <div >
+            <div class="sports-img">
+              <img  src="baseball.svg" class="sprite icon-tennis-white filter invert brightness-0 h-5 w-5 ">
+            </div>
+            <div class="sportsNAV-text">Tennis</div>
+        </div>
+      </div>
+    </a>
+  </li>
+</ul>
+</div>
+<!-- DESKTOP -->
+<div class="showdesktop  w-full hidden">
+  <div class="bottom-header bg-[linear-gradient(-180deg,#f4b501_0%,#f68700_100%)] ml-0 pb-1.5 pt-1.5 relative h-[39px] min-h-[35px] pl-[5px] pr-[5px] w-full">
+    <div class="navbar relative flex flex-wrap items-center justify-between pt-1.5 pb-1.5">
+      <button type="button" class="navbar-toggler p-1 text-xl leading-1 bg-transparent">
+        <span class="navbar-toggler-icon"></span></button>
+            <div class="nav-collapse basis-full grow ">
+      <ul class="nav-navbar relative  flex items-center pl-0 w-full h-2.5  ">
+        <li class="nav-item relative">
+          <div class="selectedSportsCategory absolute text-[#000000] top-25 w-full h-0.5 uppercase text-[14px] inline-block z-120 underline ">
+          </div>
+          <a href="" class="text-[14px] uppercase inline-block relative  pl-2.5 pr-[15px] pt-[3px] pb-[3px] overflow-hidden text-center underline">Home</a>
+        </li>
+         <li class="nav-item relative">
+          <div class="selectedSportsCategory absolute text-[#000000] top-25 w-full h-0.5 uppercase text-[14px] inline-block z-120 ">
+          </div>
+          <a href="" class="text-[14px] uppercase inline-block relative  pl-[15px] pr-[15px] pt-[3px] pb-[3px] overflow-hidden text-center">In-play</a>
+        </li>
+         <li class="nav-item relative">
+          <div class="selectedSportsCategory absolute text-[#000000] top-25 w-full h-0.5 uppercase text-[14px] inline-block z-120 underline ">
+          </div>
+          <a href="" class="text-[14px] uppercase inline-block relative  pl-[15px] pr-[15px] pt-[3px] pb-[3px] overflow-hidden text-center">Cricket</a>
+        </li>
+         <li class="nav-item relative">
+          <div class="selectedSportsCategory absolute text-[#000000] top-25 w-full h-0.5 uppercase text-[14px] inline-block z-120 underline ">
+          </div>
+          <a href="" class="text-[14px] uppercase inline-block relative  pl-[15px] pr-[15px] pt-[3px] pb-[3px] overflow-hidden text-center">Soccer</a>
+        </li>
+         <li class="nav-item relative">
+          <div class="selectedSportsCategory absolute text-[#000000] top-25 w-full h-0.5 uppercase text-[14px] inline-block z-120 underline ">
+          </div>
+          <a href="" class="text-[14px] uppercase inline-block relative  pl-[15px] pr-[15px] pt-[3px] pb-[3px] overflow-hidden text-center">Tennis</a>
+        </li>
+      </ul>
+    </div>
+    </div>
+
+
+  </div>
+</div>

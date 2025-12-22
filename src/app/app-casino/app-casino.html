@@ -1,0 +1,378 @@
+<!-- <p>app-casino works!</p> -->
+<div>
+  <div class="app-casino">
+    <div class="container-fluid mx-0 w-full ">
+      <div class="md2 relative">
+        <ul
+          class="navSports flex mb-3 h-8 overflow-x-auto bg-[linear-gradient(180deg,#030a12,#444647_42%,#58595a)] shadow-[0_8px_8px_-7px_#000] lg:hidden">
+          <li
+            class="navItemsSports text-[16px] px-[15px] py-1 text-white bg-[linear-gradient(180deg,#030a12,#444647_42%,#58595a)] border-r border-white in-w-max"
+            [ngClass]="{'bg-active-gradient': activeNav === 'Popular'}" (click)="setActiveNav('Popular')">
+            <a href="javascript:void(0)">Popular</a>
+          </li>
+          <li
+            class="navItemsSports text-[16px] px-[15px] py-1 text-white bg-[linear-gradient(180deg,#030a12,#444647_42%,#58595a)] border-r border-white min-w-max"
+            [ngClass]="{'bg-active-gradient': activeNav === 'Teen Patti'}" (click)="setActiveNav('Teen Patti')">
+            <a href="javascript:void(0)">Teen Patti</a>
+          </li>
+          <li
+            class="navItemsSports text-[16px] px-4 py-1 text-white bg-[linear-gradient(180deg,#030a12,#444647_42%,#58595a)] border-r border-white min-w-max"
+            [ngClass]="{'bg-active-gradient': activeNav === 'Lucky 7'}" (click)="setActiveNav('Lucky 7')">
+            <a href="javascript:void(0)">Lucky 7</a>
+          </li>
+          <li
+            class="navItemsSports text-[16px] px-4 py-1 text-white bg-[linear-gradient(180deg,#030a12,#444647_42%,#58595a)] border-r border-white min-w-max"
+            [ngClass]="{'bg-active-gradient': activeNav === 'Dragon Tiger'}" (click)="setActiveNav('Dragon Tiger')">
+            <a href="javascript:void(0)">Dragon Tiger</a>
+          </li>
+          <li
+            class="navItemsSports text-[16px] px-4 py-1 text-white bg-[linear-gradient(180deg,#030a12,#444647_42%,#58595a)] border-r border-white min-w-max"
+            [ngClass]="{'bg-active-gradient': activeNav === 'Baccarat'}" (click)="setActiveNav('Baccarat')">
+            <a href="javascript:void(0)">Baccarat</a>
+          </li>
+          <li
+            class="navItemsSports text-[16px] px-4 py-1 text-white bg-[linear-gradient(180deg,#030a12,#444647_42%,#58595a)] border-r border-white min-w-max"
+            [ngClass]="{'bg-active-gradient': activeNav === 'Abdar Bahar'}" (click)="setActiveNav('Abdar Bahar')">
+            <a href="javascript:void(0)">Andar Bahar</a>
+          </li>
+          <li
+            class="navItemsSports text-[16px] px-4 py-1 text-white bg-[linear-gradient(180deg,#030a12,#444647_42%,#58595a)] border-r border-white min-w-max"
+            [ngClass]="{'bg-active-gradient': activeNav === 'Poker'}" (click)="setActiveNav('Poker')">
+            <a href="javascript:void(0)">Poker</a>
+          </li>
+          <li
+            class="navItemsSports text-[16px] px-4 py-1 text-white bg-[linear-gradient(180deg,#030a12,#444647_42%,#58595a)] border-r border-white min-w-max"
+            [ngClass]="{'bg-active-gradient': activeNav === 'Bollywood'}" (click)="setActiveNav('Bollywood')">
+            <a href="javascript:void(0)">Bollywood</a>
+          </li>
+          <li
+            class="navItemsSports text-[16px] px-4 py-1 text-white bg-[linear-gradient(180deg,#030a12,#444647_42%,#58595a)] border-r border-white min-w-max"
+            [ngClass]="{'bg-active-gradient': activeNav === 'Region'}" (click)="setActiveNav('Region')">
+            <a href="javascript:void(0)">Region</a>
+          </li>
+          <li
+            class="navItemsSports text-[16px] px-4 py-1 text-white bg-[linear-gradient(180deg,#030a12,#444647_42%,#58595a)] border-r border-white min-w-max"
+            [ngClass]="{'bg-active-gradient': activeNav === 'Other'}" (click)="setActiveNav('Other')">
+            <a href="javascript:void(0)">Other</a>
+          </li>
+          <li
+            class="navItemsSports text-[16px] px-4 py-1 text-white bg-[linear-gradient(180deg,#030a12,#444647_42%,#58595a)] border-r border-white min-w-max"
+            [ngClass]="{'bg-active-gradient': activeNav === 'Virtual'}" (click)="setActiveNav('Virtual')">
+            <a href="javascript:void(0)">Virtual</a>
+        </ul>
+        <!-- cards -->
+        <div class="container-fluid mx-0 w-full m-0 p-[3px] overflow-hidden">
+          <div class="rows flex flex-wrap h-[3032px] ml-1.5 mr-1.5 mt-[3px]">
+            <!-- 1st -->
+            <div
+              class="card1 basis-auto grow-0 shrink-0 h-[190px] mt-0 max-w-full pl-1 pr-[4.8px] text-center w-[33.33333333%] shadow-xl ">
+              <div class="casinoicons-custom shadow-[0_5px_9px_-3px_rgb(33,37,41)] rounded-lg mb-[15px] relative">
+              </div>
+            </div>
+            <!-- 2nd-->
+            <div
+              class="card1 basis-auto grow-0 shrink-0 h-[190px] mt-0 max-w-full pl-1 pr-[4.8px] text-center w-[33.33333333%] shadow-xl">
+              <div class="casinoicons-custom shadow-[0_5px_9px_-3px_rgb(33,37,41)] rounded-lg mb-[15px] relative">
+              </div>
+            </div>
+            <!-- 3rd -->
+            <div
+              class="card1 basis-auto grow-0 shrink-0 h-[190px] mt-0 max-w-full pl-1 pr-[4.8px] text-center w-[33.33333333%] shadow-xl  ">
+              <div class="casinoicons-custom  rounded-lg   mb-[15px] relative">
+              </div>
+            </div>
+            <!-- 4th -->
+            <div
+              class="card1 basis-auto grow-0 shrink-0 h-[190px] mt-0 max-w-full pl-1 pr-[4.8px] text-center w-[33.33333333%] shadow-xl  ">
+              <div class="casinoicons-custom  rounded-lg   mb-[15px] relative">
+              </div>
+            </div>
+            <!-- 5th -->
+            <div
+              class="card1 basis-auto grow-0 shrink-0 h-[190px] mt-0 max-w-full pl-1 pr-[4.8px] text-center w-[33.33333333%] shadow-xl  ">
+              <div class="casinoicons-custom  rounded-lg   mb-[15px] relative">
+                <img src="abevolution+gaming-min.png" alt="" class=" h-[189px]">
+              </div>
+            </div>
+            <!-- 6th -->
+            <div
+              class="card1 basis-auto grow-0 shrink-0 h-[190px] mt-0 max-w-full pl-1 pr-[4.8px] text-center w-[33.33333333%] shadow-xl  ">
+              <div class="casinoicons-custom  rounded-lg   mb-[15px] relative">
+              </div>
+            </div>
+            <!-- 7th -->
+            <div
+              class="card1 basis-auto grow-0 shrink-0 h-[190px] mt-0 max-w-full pl-1 pr-[4.8px] text-center w-[33.33333333%] shadow-xl  ">
+              <div class="casinoicons-custom  rounded-lg   mb-[15px] relative">
+              </div>
+            </div>
+            <!-- 8th -->
+            <div
+              class="card1 basis-auto grow-0 shrink-0 h-[190px] mt-0 max-w-full pl-1 pr-[4.8px] text-center w-[33.33333333%] shadow-xl  ">
+              <div class="casinoicons-custom  rounded-lg   mb-[15px] relative">
+              </div>
+            </div>
+            <!-- 9th -->
+            <div
+              class="card1 basis-auto grow-0 shrink-0 h-[190px] mt-0 max-w-full pl-1 pr-[4.8px] text-center w-[33.33333333%] shadow-xl  ">
+              <div class="casinoicons-custom  rounded-lg   mb-[15px] relative">
+              </div>
+            </div>
+            <!-- 10th -->
+            <div
+              class="card1 basis-auto grow-0 shrink-0 h-[190px] mt-0 max-w-full pl-1 pr-[4.8px] text-center w-[33.33333333%] shadow-xl  ">
+              <div class="casinoicons-custom  rounded-lg   mb-[15px] relative">
+              </div>
+            </div>
+            <!-- 11th -->
+            <div
+              class="card1 basis-auto grow-0 shrink-0 h-[190px] mt-0 max-w-full pl-1 pr-[4.8px] text-center w-[33.33333333%] shadow-xl  ">
+              <div class="casinoicons-custom  rounded-lg   mb-[15px] relative">
+              </div>
+            </div>
+            <!-- 12th -->
+            <div
+              class="card1 basis-auto grow-0 shrink-0 h-[190px] mt-0 max-w-full pl-1 pr-[4.8px] text-center w-[33.33333333%] shadow-xl  ">
+              <div class="casinoicons-custom  rounded-lg   mb-[15px] relative">
+              </div>
+            </div>
+            <!-- 13th -->
+            <div
+              class="card1 basis-auto grow-0 shrink-0 h-[190px] mt-0 max-w-full pl-1 pr-[4.8px] text-center w-[33.33333333%] shadow-xl  ">
+              <div class="casinoicons-custom  rounded-lg   mb-[15px] relative">
+              </div>
+            </div>
+            <!-- 14 -->
+            <div
+              class="card1 basis-auto grow-0 shrink-0 h-[190px] mt-0 max-w-full pl-1 pr-[4.8px] text-center w-[33.33333333%] shadow-xl  ">
+              <div class="casinoicons-custom  rounded-lg   mb-[15px] relative">
+              </div>
+            </div>
+            <!-- 15th -->
+            <div
+              class="card1 basis-auto grow-0 shrink-0 h-[190px] mt-0 max-w-full pl-1 pr-[4.8px] text-center w-[33.33333333%] shadow-xl  ">
+              <div class="casinoicons-custom  rounded-lg   mb-[15px] relative">
+              </div>
+            </div>
+            <!-- 16th-->
+            <div
+              class="card1 basis-auto grow-0 shrink-0 h-[190px] mt-0 max-w-full pl-1 pr-[4.8px] text-center w-[33.33333333%] shadow-xl ">
+              <div class="casinoicons-custom shadow-[0_5px_9px_-3px_rgb(33,37,41)] rounded-lg mb-[15px] relative">
+              </div>
+            </div>
+            <!-- 17th-->
+            <div
+              class="card1 basis-auto grow-0 shrink-0 h-[190px] mt-0 max-w-full pl-1 pr-[4.8px] text-center w-[33.33333333%] shadow-xl">
+              <div class="casinoicons-custom shadow-[0_5px_9px_-3px_rgb(33,37,41)] rounded-lg mb-[15px] relative">
+              </div>
+            </div>
+            <!-- 18th -->
+            <div
+              class="card1 basis-auto grow-0 shrink-0 h-[190px] mt-0 max-w-full pl-1 pr-[4.8px] text-center w-[33.33333333%] shadow-xl  ">
+              <div class="casinoicons-custom  rounded-lg   mb-[15px] relative">
+              </div>
+            </div>
+            <!-- 19th -->
+            <div
+              class="card1 basis-auto grow-0 shrink-0 h-[190px] mt-0 max-w-full pl-1 pr-[4.8px] text-center w-[33.33333333%] shadow-xl  ">
+              <div class="casinoicons-custom  rounded-lg   mb-[15px] relative">
+              </div>
+            </div>
+            <!-- 20th -->
+            <div
+              class="card1 basis-auto grow-0 shrink-0 h-[190px] mt-0 max-w-full pl-1 pr-[4.8px] text-center w-[33.33333333%] shadow-xl  ">
+              <div class="casinoicons-custom  rounded-lg   mb-[15px] relative">
+              </div>
+            </div>
+            <!-- 21th -->
+            <div
+              class="card1 basis-auto grow-0 shrink-0 h-[190px] mt-0 max-w-full pl-1 pr-[4.8px] text-center w-[33.33333333%] shadow-xl  ">
+              <div class="casinoicons-custom  rounded-lg   mb-[15px] relative">
+              </div>
+            </div>
+            <!-- 22th -->
+            <div
+              class="card1 basis-auto grow-0 shrink-0 h-[190px] mt-0 max-w-full pl-1 pr-[4.8px] text-center w-[33.33333333%] shadow-xl  ">
+              <div class="casinoicons-custom  rounded-lg   mb-[15px] relative">
+              </div>
+            </div>
+            <!-- 23th -->
+            <div
+              class="card1 basis-auto grow-0 shrink-0 h-[190px] mt-0 max-w-full pl-1 pr-[4.8px] text-center w-[33.33333333%] shadow-xl  ">
+              <div class="casinoicons-custom  rounded-lg   mb-[15px] relative">
+              </div>
+            </div>
+            <!-- 14th -->
+            <div
+              class="card1 basis-auto grow-0 shrink-0 h-[190px] mt-0 max-w-full pl-1 pr-[4.8px] text-center w-[33.33333333%] shadow-xl  ">
+              <div class="casinoicons-custom  rounded-lg   mb-[15px] relative">
+              </div>
+            </div>
+            <!-- 25th -->
+            <div
+              class="card1 basis-auto grow-0 shrink-0 h-[190px] mt-0 max-w-full pl-1 pr-[4.8px] text-center w-[33.33333333%] shadow-xl  ">
+              <div class="casinoicons-custom  rounded-lg   mb-[15px] relative">
+              </div>
+            </div>
+            <!-- 26th -->
+            <div
+              class="card1 basis-auto grow-0 shrink-0 h-[190px] mt-0 max-w-full pl-1 pr-[4.8px] text-center w-[33.33333333%] shadow-xl  ">
+              <div class="casinoicons-custom  rounded-lg   mb-[15px] relative">
+              </div>
+            </div>
+            <!-- 27th -->
+            <div
+              class="card1 basis-auto grow-0 shrink-0 h-[190px] mt-0 max-w-full pl-1 pr-[4.8px] text-center w-[33.33333333%] shadow-xl  ">
+              <div class="casinoicons-custom  rounded-lg   mb-[15px] relative">
+              </div>
+            </div>
+            <!-- 28th -->
+            <div
+              class="card1 basis-auto grow-0 shrink-0 h-[190px] mt-0 max-w-full pl-1 pr-[4.8px] text-center w-[33.33333333%] shadow-xl  ">
+              <div class="casinoicons-custom  rounded-lg   mb-[15px] relative">
+              </div>
+            </div>
+            <!-- 29th-->
+            <div
+              class="card1 basis-auto grow-0 shrink-0 h-[190px] mt-0 max-w-full pl-1 pr-[4.8px] text-center w-[33.33333333%] shadow-xl  ">
+              <div class="casinoicons-custom  rounded-lg   mb-[15px] relative">
+              </div>
+            </div>
+            <!-- 30th -->
+            <div
+              class="card1 basis-auto grow-0 shrink-0 h-[190px] mt-0 max-w-full pl-1 pr-[4.8px] text-center w-[33.33333333%] shadow-xl  ">
+              <div class="casinoicons-custom  rounded-lg   mb-[15px] relative">
+              </div>
+            </div>
+            <!-- 31 -->
+            <div
+              class="card1 basis-auto grow-0 shrink-0 h-[190px] mt-0 max-w-full pl-1 pr-[4.8px] text-center w-[33.33333333%] shadow-xl ">
+              <div class="casinoicons-custom shadow-[0_5px_9px_-3px_rgb(33,37,41)] rounded-lg mb-[15px] relative">
+              </div>
+            </div>
+            <!-- 32-->
+            <div
+              class="card1 basis-auto grow-0 shrink-0 h-[190px] mt-0 max-w-full pl-1 pr-[4.8px] text-center w-[33.33333333%] shadow-xl">
+              <div class="casinoicons-custom shadow-[0_5px_9px_-3px_rgb(33,37,41)] rounded-lg mb-[15px] relative">
+              </div>
+            </div>
+            <!-- 33 -->
+            <div
+              class="card1 basis-auto grow-0 shrink-0 h-[190px] mt-0 max-w-full pl-1 pr-[4.8px] text-center w-[33.33333333%] shadow-xl  ">
+              <div class="casinoicons-custom  rounded-lg   mb-[15px] relative">
+              </div>
+            </div>
+            <!-- 34 -->
+            <div
+              class="card1 basis-auto grow-0 shrink-0 h-[190px] mt-0 max-w-full pl-1 pr-[4.8px] text-center w-[33.33333333%] shadow-xl  ">
+              <div class="casinoicons-custom  rounded-lg   mb-[15px] relative">
+              </div>
+            </div>
+            <!-- 35 -->
+            <div
+              class="card1 basis-auto grow-0 shrink-0 h-[190px] mt-0 max-w-full pl-1 pr-[4.8px] text-center w-[33.33333333%] shadow-xl  ">
+              <div class="casinoicons-custom  rounded-lg   mb-[15px] relative">
+              </div>
+            </div>
+            <!-- 36 -->
+            <div
+              class="card1 basis-auto grow-0 shrink-0 h-[190px] mt-0 max-w-full pl-1 pr-[4.8px] text-center w-[33.33333333%] shadow-xl  ">
+              <div class="casinoicons-custom  rounded-lg   mb-[15px] relative">
+              </div>
+            </div>
+            <!-- 37 -->
+            <div
+              class="card1 basis-auto grow-0 shrink-0 h-[190px] mt-0 max-w-full pl-1 pr-[4.8px] text-center w-[33.33333333%] shadow-xl  ">
+              <div class="casinoicons-custom  rounded-lg   mb-[15px] relative">
+              </div>
+            </div>
+            <!-- 38-->
+            <div
+              class="card1 basis-auto grow-0 shrink-0 h-[190px] mt-0 max-w-full pl-1 pr-[4.8px] text-center w-[33.33333333%] shadow-xl  ">
+              <div class="casinoicons-custom  rounded-lg   mb-[15px] relative">
+              </div>
+            </div>
+            <!--39 -->
+            <div
+              class="card1 basis-auto grow-0 shrink-0 h-[190px] mt-0 max-w-full pl-1 pr-[4.8px] text-center w-[33.33333333%] shadow-xl  ">
+              <div class="casinoicons-custom  rounded-lg   mb-[15px] relative">
+              </div>
+            </div>
+            <!-- 40 -->
+            <div
+              class="card1 basis-auto grow-0 shrink-0 h-[190px] mt-0 max-w-full pl-1 pr-[4.8px] text-center w-[33.33333333%] shadow-xl  ">
+              <div class="casinoicons-custom  rounded-lg   mb-[15px] relative">
+              </div>
+            </div>
+            <!-- 41 -->
+            <div
+              class="card1 basis-auto grow-0 shrink-0 h-[190px] mt-0 max-w-full pl-1 pr-[4.8px] text-center w-[33.33333333%] shadow-xl  ">
+              <div class="casinoicons-custom  rounded-lg   mb-[15px] relative">
+              </div>
+            </div>
+            <!-- 42 -->
+            <div
+              class="card1 basis-auto grow-0 shrink-0 h-[190px] mt-0 max-w-full pl-1 pr-[4.8px] text-center w-[33.33333333%] shadow-xl  ">
+              <div class="casinoicons-custom  rounded-lg   mb-[15px] relative">
+              </div>
+            </div>
+            <!-- 43 -->
+            <div
+              class="card1 basis-auto grow-0 shrink-0 h-[190px] mt-0 max-w-full pl-1 pr-[4.8px] text-center w-[33.33333333%] shadow-xl  ">
+              <div class="casinoicons-custom  rounded-lg   mb-[15px] relative">
+              </div>
+            </div>
+            <!-- 44-->
+            <div
+              class="card1 basis-auto grow-0 shrink-0 h-[190px] mt-0 max-w-full pl-1 pr-[4.8px] text-center w-[33.33333333%] shadow-xl  ">
+              <div class="casinoicons-custom  rounded-lg   mb-[15px] relative">
+              </div>
+            </div>
+            <!-- 45 -->
+            <div
+              class="card1 basis-auto grow-0 shrink-0 h-[190px] mt-0 max-w-full pl-1 pr-[4.8px] text-center w-[33.33333333%] shadow-xl  ">
+              <div class="casinoicons-custom  rounded-lg   mb-[15px] relative">
+              </div>
+            </div>
+            <!-- 46 -->
+            <div
+              class="card1 basis-auto grow-0 shrink-0 h-[190px] mt-0 max-w-full pl-1 pr-[4.8px] text-center w-[33.33333333%] shadow-xl  ">
+              <div class="casinoicons-custom  rounded-lg   mb-[15px] relative">
+              </div>
+            </div>
+            <!-- 47 -->
+            <div
+              class="card1 basis-auto grow-0 shrink-0 h-[190px] mt-0 max-w-full pl-1 pr-[4.8px] text-center w-[33.33333333%] shadow-xl  ">
+              <div class="casinoicons-custom  rounded-lg   mb-[15px] relative">
+              </div>
+            </div>
+            <!-- 48-->
+            <div
+              class="card1 basis-auto grow-0 shrink-0 h-[190px] mt-0 max-w-full pl-1 pr-[4.8px] text-center w-[33.33333333%] shadow-xl  ">
+              <div class="casinoicons-custom  rounded-lg   mb-[15px] relative">
+              </div>
+            </div>
+            <!-- 49 -->
+            <div
+              class="card1 basis-auto grow-0 shrink-0 h-[190px] mt-0 max-w-full pl-1 pr-[4.8px] text-center w-[33.33333333%] shadow-xl  ">
+              <div class="casinoicons-custom  rounded-lg   mb-[15px] relative">
+              </div>
+            </div>
+            <!-- 50 -->
+            <div
+              class="card1 basis-auto grow-0 shrink-0 h-[190px] mt-0 max-w-full pl-1 pr-[4.8px] text-center w-[33.33333333%] shadow-xl  ">
+              <div class="casinoicons-custom  rounded-lg   mb-[15px] relative">
+              </div>
+            </div>
+          </div>
+        </div>
+      <!-- footer -->
+        <!-- <div class="div-footer h-10 bg-[linear-gradient(180deg,#000000,#000000_42%,#000000)]">
+          <div class="app-footer ">
+            <div class="footer text-white p-3 text-[11px] text-center  ">
+              <p> © Copyright 2024. All Rights Reserved. Powered by <span
+                  class="uppercase">Exchange</span></p>
+            </div>
+          </div>
+        </div>
+      </div> -->

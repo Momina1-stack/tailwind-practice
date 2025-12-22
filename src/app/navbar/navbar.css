@@ -1,4 +1,14 @@
-@import "tailwindcss";
+.blink-text {
+  font-size: 12px;
+  font-weight: bold;
+  animation: blinkColor 1s infinite;
+}
+
+@keyframes blinkColor {
+  0%   { color: red; }
+  50%  { color: yellow; }
+  100% { color: red; }
+}
 @layer utilities {
   .bg-cricket-gradient {
     background: linear-gradient(-180deg, #f4b501 0%, #f68700 100%);
@@ -15,3 +25,5 @@
     background: linear-gradient(-180deg, #f4b501 0%, #f68700 100%);
   }
 }
+
+
