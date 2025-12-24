@@ -1,49 +1,262 @@
-
-<!-- 
-
-<div class="sidebar h-full bg-[linear-gradient(-180deg,#b8b3b3_0%,#dad6d6_100%)] text-[16px] leading-[15px] min-h[204.333px] p-0 ">
-  <div class="sidebar-title bg-[linear-gradient(180deg,#030a12,#444647_42%,#58595a)] text-white mt-px pt-1 pb-1 pl-1.5 pr-1.5 w-full text-[18px] mb-0 ">
-    <h5 class="inline-block text-[15px]">Others</h5>
-  </div>
-  <nav class="">
-    <ul class="-ml-3.5 mb-0 mt-0 p-l[2rem]">
-      <li class="nav-item">
-        <a class="nav-link text-[16px]" href="">
-        <span >Casino</span></a></li>
-
-    </ul>
-  </nav>
-</div> -->
-
-<!-- <div class="flex h-screen visible sm:invisible"> -->
-  <!-- Sidebar -->
-  <!-- <aside class="w-[189px] bg-[linear-gradient(-180deg,#b8b3b3_0%,#dad6d6_100%)]  text-white visible sm:invisible">
-  <div class="sidebar-title bg-[linear-gradient(180deg,#030a12,#444647_42%,#58595a)] text-white w-64 text-[18px] mb-px ml-0 p-0 ">
-    <h5 class="inline-block text-[15px] pl-1 visible sm:invisible">Others</h5>
-     <ul class="-ml-3.5 mb-0 mt-0 p-l[2rem] space-y-3">
-      <li class="nav-item">
-        <a class="nav-link text-[16px]" href="">
-        <span class="p-2">Casino</span></a></li>
-    </ul>
+<!-- sidebar -->
+<div class="h-full hidden w-[15%] sm:flex md:flex fixed">
+  <div
+    class="sidebar w-full bg-[linear-gradient(-180deg,#b8b3b3_0%,#dad6d6_100%)]  h-[calc(100dvh - 139px)] grow shrink basis-full h-full relative top-30">
+    <div class="app-sidebar">
+      <div
+        class="sidebar min-h-[calc(100vh - 139px)] bg-[linear-gradient(-180deg,#b8b3b3_0%,#dad6d6_100%)] text-[16px] leading-[15px] h-full p-0">
+        <div
+          class="sidebar-title bg-[linear-gradient(180deg,#030a12,#444647_42%,#58595a)] text-white mb-0 py-1 px-1.5 flex "   (click)="toggleDiv()">
+          <h5 class="inline-block text-[18px] mb-0 w-full">Others</h5>
+          <img src="angle-down-solid-full.svg" alt="" class="h-4 w-4  filter invert brightness-0"
+           [ngClass]="isOpen ? 'rotate-180' : 'rotate-0'">
+        </div> 
+        <nav class="casino" *ngIf="isOpen">
+          <ul class="mt-0 mb-0" >
+            <li class="nav-item pt-1.5 pb-1.5">
+              <a href="" class="nav-link text-[16px] text-white pl-4 pr-4  ">
+                <span>Casino</span></a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+      <!-- next -->
+      <div
+        class="sidebar min-h-[calc(100vh - 139px)] bg-[linear-gradient(-180deg,#b8b3b3_0%,#dad6d6_100%)] text-[16px] leading-[15px] h-full p-0">
+        <div
+          class="sidebar-title bg-[linear-gradient(180deg,#030a12,#444647_42%,#58595a)] text-white mb-0 mt-px py-1 px-1.5 flex"  (click)="togglefunction()">
+          <h5 class="inline-block text-[18px] mb-0 w-full" >All Sports</h5>
+          <img src="angle-down-solid-full.svg" alt="" class="h-4 w-4  filter invert brightness-0"  [ngClass]="isOpen ? 'rotate-180' : 'rotate-0'">
+        </div>
+        <nav class="casino"  *ngIf="Open">
+          <ul class="mt-0 mb-0">
+            <li class="nav-item pt-1.5 pb-1.5">
+              <div class="flex pt-1 pl-2.5">
+                <span><i>
+                    <img src="square-plus-regular-full.svg" alt="" class="h-4 w-4  filter invert brightness-0">
+                  </i></span>
+                <span class="ps-1 text-white">Cricket</span>
+              </div>
+              <!-- first -->
+              <!-- <ul class="ml-4 my-0">
+                <li class="py-1 relative pl-2.5">
+                  <div class="flex">
+                    <span><i>
+                        <img src="square-plus-regular-full.svg" alt="" class="h-4 w-4  filter invert brightness-0">
+                      </i></span>
+                    <span class="ps-1 text-white">BBL</span>
+                  </div>
+                </li>
+              </ul> -->
+              <!-- 2nd -->
+              <!-- <ul class="ml-4 my-0">
+                <li class="py-1 relative pl-2.5">
+                  <div class="flex">
+                    <span><i>
+                        <img src="square-plus-regular-full.svg" alt="" class="h-6 w-6  filter invert brightness-0">
+                      </i></span>
+                    <span class="ps-1 text-white"> Falcons Champions Trophy T20 </span>
+                  </div>
+                </li>
+              </ul> -->
+              <!-- 3rd -->
+              <!-- <ul class="ml-4 my-0">
+                <li class="py-1 relative pl-2.5">
+                  <div class="flex">
+                    <span><i>
+                        <img src="square-plus-regular-full.svg" alt="" class="h-6 w-6  filter invert brightness-0">
+                      </i></span>
+                    <span class="ps-1 text-white"> Indo-Nepal T20 Championship </span>
+                  </div>
+                </li>
+              </ul> -->
+              <!-- 4th -->
+              <!-- <ul class="ml-4 my-0">
+                <li class="py-1 relative pl-2.5">
+                  <div class="flex">
+                    <span><i>
+                        <img src="square-plus-regular-full.svg" alt="" class="h-6 w-6  filter invert brightness-0">
+                      </i></span>
+                    <span class="ps-1 text-white"> International League T20 </span>
+                  </div>
+                </li>
+              </ul> -->
+              <!-- 5th -->
+              <!-- <ul class="ml-4 my-0">
+                <li class="py-1 relative pl-2.5">
+                  <div class="flex">
+                    <span><i>
+                        <img src="square-plus-regular-full.svg" alt="" class="h-6 w-6  filter invert brightness-0">
+                      </i></span>
+                    <span class="ps-1 text-white"> International Twenty20 Matches </span>
+                  </div>
+                </li>
+              </ul> -->
+              <!-- 6th -->
+              <!-- <ul class="ml-4 my-0">
+                <li class="py-1 relative pl-2.5">
+                  <div class="flex">
+                    <span><i>
+                        <img src="square-plus-regular-full.svg" alt="" class="h-4 w-4  filter invert brightness-0">
+                      </i></span>
+                    <span class="ps-1 text-white"> Vijay Hazare Trophy </span>
+                  </div>
+                </li>
+              </ul> -->
+              <!-- 7th -->
+              <!-- <ul class="ml-4 my-0">
+                <li class="py-1 relative pl-2.5">
+                  <div class="flex">
+                    <span><i>
+                        <img src="square-plus-regular-full.svg" alt="" class="h-6 w-6  filter invert brightness-0">
+                      </i></span>
+                    <span class="ps-1 text-white">Womens International Twenty20 Matches </span>
+                  </div>
+                </li>
+              </ul> -->
+            </li>
+          </ul>
+        </nav>
+        <!-- soccer -->
+        <nav class="casino"  *ngIf="Open">
+          <ul class="mt-0 mb-0">
+            <li class="nav-item pt-1.5 pb-1.5">
+              <div class="flex pt-1 pl-2.5">
+                <span><i>
+                    <img src="square-plus-regular-full.svg" alt="" class="h-4 w-4  filter invert brightness-0">
+                  </i></span>
+                <span class="ps-1 text-white">Soccer</span>
+              </div>
+              <!-- first -->
+              <!-- <ul class="ml-4 my-0">
+                <li class="py-1 relative pl-2.5">
+                  <div class="flex">
+                    <span><i>
+                        <img src="square-plus-regular-full.svg" alt="" class="h-4 w-4  filter invert brightness-0">
+                      </i></span>
+                    <span class="ps-1 text-white">BBL</span>
+                  </div>
+                </li>
+              </ul> -->
+              <!-- 2nd -->
+              <!-- <ul class="ml-4 my-0">
+                <li class="py-1 relative pl-2.5">
+                  <div class="flex">
+                    <span><i>
+                        <img src="square-plus-regular-full.svg" alt="" class="h-6 w-6  filter invert brightness-0">
+                      </i></span>
+                    <span class="ps-1 text-white"> Falcons Champions Trophy T20 </span>
+                  </div>
+                </li>
+              </ul> -->
+              <!-- 3rd -->
+              <!-- <ul class="ml-4 my-0">
+                <li class="py-1 relative pl-2.5">
+                  <div class="flex">
+                    <span><i>
+                        <img src="square-plus-regular-full.svg" alt="" class="h-6 w-6  filter invert brightness-0">
+                      </i></span>
+                    <span class="ps-1 text-white"> Indo-Nepal T20 Championship </span>
+                  </div>
+                </li>
+              </ul> -->
+              <!-- 4th -->
+              <!-- <ul class="ml-4 my-0">
+                <li class="py-1 relative pl-2.5">
+                  <div class="flex">
+                    <span><i>
+                        <img src="square-plus-regular-full.svg" alt="" class="h-6 w-6  filter invert brightness-0">
+                      </i></span>
+                    <span class="ps-1 text-white"> International League T20 </span>
+                  </div>
+                </li>
+              </ul> -->
+              <!-- 5th -->
+              <!-- <ul class="ml-4 my-0">
+                <li class="py-1 relative pl-2.5">
+                  <div class="flex">
+                    <span><i>
+                        <img src="square-plus-regular-full.svg" alt="" class="h-6 w-6  filter invert brightness-0">
+                      </i></span>
+                    <span class="ps-1 text-white"> International Twenty20 Matches </span>
+                  </div>
+                </li>
+              </ul> -->
+              <!-- 6th -->
+              <!-- <ul class="ml-4 my-0">
+                <li class="py-1 relative pl-2.5">
+                  <div class="flex">
+                    <span><i>
+                        <img src="square-plus-regular-full.svg" alt="" class="h-4 w-4  filter invert brightness-0">
+                      </i></span>
+                    <span class="ps-1 text-white"> Vijay Hazare Trophy </span>
+                  </div>
+                </li>
+              </ul> -->
+              <!-- 7th -->
+              <!-- <ul class="ml-4 my-0">
+                <li class="py-1 relative pl-2.5">
+                  <div class="flex">
+                    <span><i>
+                        <img src="square-plus-regular-full.svg" alt="" class="h-6 w-6  filter invert brightness-0">
+                      </i></span>
+                    <span class="ps-1 text-white">Womens International Twenty20 Matches </span>
+                  </div>
+                </li>
+              </ul> -->
+            </li>
+          </ul>
+        </nav>
+        <!-- tennis -->
+        <nav class="casino"  *ngIf="Open">
+          <ul class="mt-0 mb-0">
+            <li class="nav-item pt-1.5 pb-1.5">
+              <div class="flex pt-1 pl-2.5">
+                <span>
+                  <i>
+                    <img src="square-plus-regular-full.svg" alt="" class="h-4 w-4  filter invert brightness-0">
+                  </i>
+                </span>
+                <span class="ps-1 text-white">Tennis</span>
+              </div>
+              <!-- first -->
+              <!-- <ul class="ml-4 my-0">
+                <li class="py-1 relative pl-2.5">
+                  <div class="flex">
+                    <span><i>
+                        <img src="square-plus-regular-full.svg" alt="" class="h-4 w-4  filter invert brightness-0">
+                      </i></span>
+                    <span class="ps-1 text-white">BBL</span>
+                  </div>
+                </li>
+              </ul> -->
+              <!-- 2nd -->
+              <!-- <ul class="ml-4 my-0">
+                <li class="py-1 relative pl-2.5">
+                  <div class="flex">
+                    <span><i>
+                        <img src="square-plus-regular-full.svg" alt="" class="h-6 w-6  filter invert brightness-0">
+                      </i></span>
+                    <span class="ps-1 text-white"> Falcons Champions Trophy T20 </span>
+                  </div>
+                </li>
+              </ul> -->
+              <!-- 3rd -->
+              <!-- <ul class="ml-4 my-0">
+                <li class="py-1 relative pl-2.5">
+                  <div class="flex">
+                    <span><i>
+                        <img src="square-plus-regular-full.svg" alt="" class="h-6 w-6  filter invert brightness-0">
+                      </i></span>
+                    <span class="ps-1 text-white"> Indo-Nepal T20 Championship </span>
+                  </div>
+                </li>
+              </ul> -->
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </div>
     
   </div>
-   <div class="sidebar-title bg-[linear-gradient(180deg,#030a12,#444647_42%,#58595a)] text-white w-64 text-[18px] mb-px  ml-0 p-0 ">
-    <h5 class="inline-block text-[15px] pl-1 ">All sports</h5>
-     <div class="sub bg-[linear-gradient(-180deg,#b8b3b3_0%,#dad6d6_100%)]">
-      <ul class="space-y-3">
-      <li class="bg-[linear-gradient(-180deg,#b8b3b3_0%,#dad6d6_100%)] p-2 rounded">Cricket</li>
-      <li class="bg-[linear-gradient(-180deg,#b8b3b3_0%,#dad6d6_100%)] p-2 rounded">Soccer</li>
-      <li class="bg-[linear-gradient(-180deg,#b8b3b3_0%,#dad6d6_100%)] p-2 rounded">Tennis</li>
-    </ul>
-     </div>
-  </div>
-
-
-   
-  </aside> -->
-
-  <!-- Main Content -->
-  <!-- <main class="flex-1 bg-gray-100 p-6">
-    Main Content
-  </main>
-</div> -->
+</div>

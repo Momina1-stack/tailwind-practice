@@ -1,10 +1,9 @@
-<!-- <p>app-casino works!</p> -->
 <div>
   <div class="app-casino">
     <div class="container-fluid mx-0 w-full ">
       <div class="md2 relative">
         <ul
-          class="navSports flex mb-3 h-8 overflow-x-auto bg-[linear-gradient(180deg,#030a12,#444647_42%,#58595a)] shadow-[0_8px_8px_-7px_#000] lg:hidden">
+          class="navSports flex mb-3 h-8 overflow-x-auto bg-[linear-gradient(180deg,#030a12,#444647_42%,#58595a)] shadow-[0_8px_8px_-7px_#000] lg:hidden md:hidden">
           <li
             class="navItemsSports text-[16px] px-[15px] py-1 text-white bg-[linear-gradient(180deg,#030a12,#444647_42%,#58595a)] border-r border-white in-w-max"
             [ngClass]="{'bg-active-gradient': activeNav === 'Popular'}" (click)="setActiveNav('Popular')">
@@ -61,7 +60,7 @@
             <a href="javascript:void(0)">Virtual</a>
         </ul>
         <!-- cards -->
-        <div class="container-fluid mx-0 w-full m-0 p-[3px] overflow-hidden">
+        <div class="container-fluid mx-0 w-full m-0 p-[3px] overflow-hidden lg:hidden md:hidden">
           <div class="rows flex flex-wrap h-[3032px] ml-1.5 mr-1.5 mt-[3px]">
             <!-- 1st -->
             <div
@@ -366,13 +365,3 @@
             </div>
           </div>
         </div>
-      <!-- footer -->
-        <!-- <div class="div-footer h-10 bg-[linear-gradient(180deg,#000000,#000000_42%,#000000)]">
-          <div class="app-footer ">
-            <div class="footer text-white p-3 text-[11px] text-center  ">
-              <p> © Copyright 2024. All Rights Reserved. Powered by <span
-                  class="uppercase">Exchange</span></p>
-            </div>
-          </div>
-        </div>
-      </div> -->

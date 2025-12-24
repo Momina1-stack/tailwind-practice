@@ -1,21 +1,20 @@
 <div class="main bg-rgb(33, 37, 41)">
-  <div class="app-header font-[12px] ">
-    <div
-      class="header bg-[linear-gradient(180deg,#000000,#000000_42%,#000000)] font-sans font-normal h-[100px] leading-18px overflow-x-clip pl-[5px] pr-[5px] relative text-start">
+  <div class="app-header font-[12px] w-full lg:fixed z-40">
+    <div class="header bg-[linear-gradient(180deg,#000000,#000000_42%,#000000)] font-sans font-normal h-[100px] leading-18px overflow-x-clip pl-[5px] pr-[5px] relative text-start lg:h-20">
       <div class="first-div h-[100px] w-full">
         <div class="row flex flex-nowrap ml-[-9px] mr-[-9px] mt-0 max-w-full w-full justify-between">
           <div class="icon-logo flex max-w-full pl-[9px] pr-0 pe-0 items-center w-[50%]">
             <div class="both inline-flex items-center ps-2 relative">
-              <div class="logo inline-flex items-center font-[23px] mr-1.5 leading-[23px] ">
-                <img src="home-icon.png" class="w-[25.88px] h-6 mr-1 filter invert brightness-0" alt="">
-                <img src="dayfair-logo.svg" alt="" class="h-[65px] w-[100px] ">
+              <div class="logo inline-flex items-center font-[23px] mr-1.5 leading-[23px]  ">
+                <img src="home-icon.png" class="w-[25.88px] h-6 mr-1 filter invert brightness-0 block lg:hidden" alt="">
+                <img src="dayfair-logo.svg" alt="" class="h-[65px] w-[100px] lg:h-20 lg:w-40">
               </div>
             </div>
           </div>
           <div class="br-2 w-[25%] invisible"></div>
           <div class="row-2 flex items-center justify-end text-right leading-[23px] font-[14px] w-[25%]">
             <div class="row flex flex-wrap ml-[-9px] mr-[-9px] mt-0 w-[110%] h-9 ">
-              <div class="empty p-[3px] flex items-center justify-end leading-[23px] h-9 w-full gap-5">
+              <div class="empty p-[3px] flex items-center justify-end leading-[23px] h-9 w-full gap-5 relative lg:bottom-1.5">
                 <ul class="desktopviewbutton flex items-center mt-2.5 mr-[17px] gap-5 mb-1.5">
                   <div class="search float-left flex justify-center space-x-5 ">
                     <input id="searchEvent" name="searchEvent" placeholder="All Events" type="text" autocomplete="off"
@@ -59,7 +58,7 @@
           </div>
         </div>
         <div
-          class="header-bottom min-h-[35px] pr-[5px] pl-[5px] ml-1 relative flex flex-wrap  mr-[-9px] mt-0 max-w-full visible lg:invisible">
+          class="header-bottom min-h-[35px] pr-[5px] pl-[5px] ml-1 relative flex flex-wrap  mr-[-9px] mt-0 max-w-full  lg:hidden">
           <div class="div1 block max-w-[50%] basis-[50%] lg:hidden">
             <div class="search-box-container absolute left-0 z-10 top-[5px] pl-[7px] ">
               <div

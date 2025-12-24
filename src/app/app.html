@@ -2,7 +2,14 @@
 <div class=" h-[calc(100vh-32px)]">
 <app-header></app-header>
 <app-navbar></app-navbar>
+<div class="middle-content w-full hidden sm:flex">
+<div class="side w-[189px] overflow-y-hidden">
 <app-sidebar></app-sidebar>
+</div>
+<div class="right flex  w-[calc(100vw-189px)]" >
+<app-right-content></app-right-content>
+</div>
+</div>
 <app-game-container></app-game-container>
 <app-app-casino></app-app-casino>
 </div>

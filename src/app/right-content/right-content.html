@@ -1,0 +1,1624 @@
+<div class="container w-auto pr-[9px] pl-[9px] mr-0 ml-0 relative z-20 top-30">
+  <div class="w-[1056.96px]">
+    <ul
+      class="navSportsDesktop w-[1056.96px] flex h-8 bg-[linear-gradient(180deg,#030a12,#444647_42%,#58595a)] mt-0.5 ml-0.5">
+      <li class="navItemsSports py-1 px-[15px] border border-white text-[16px]"
+        [ngClass]="{'bg-active-gradient': activeBottom === 'Cricket'}" (click)="setActivetab('Cricket')">
+        <a href="#" class="text-white">Cricket</a>
+      </li>
+      <li class="navItemsSports py-1 px-[15px] border border-white text-[16px]"
+        [ngClass]="{'bg-active-gradient': activeBottom === 'Tennis'}" (click)="setActivetab('Tennis')">
+        <a href="#" class="text-white">Tennis</a>
+      </li>
+      <li class="navItemsSports py-1 px-[15px] border border-white text-[16px]"
+        [ngClass]="{'bg-active-gradient': activeBottom === 'Soccer'}" (click)="setActivetab('Soccer')">
+
+        <a href="#" class="text-white">Soccer</a>
+      </li>
+      <li class="navItemsSports py-1 px-[15px] border border-white text-[16px]"
+        [ngClass]="{'bg-active-gradient': activeBottom === 'Horse Racing'}" (click)="setActivetab('Horse Racing')">
+
+        <a href="#" class="text-white">Horse Racing</a>
+      </li>
+    </ul>
+  </div>
+</div>
+<!--game block -->
+<div class="game mb-25 block h-[593.667px] w-[1056.96px] relative top-30 pl-[3px]">
+  <div class="app-market">
+    <div class="container pr-[9px] pl-[9px] mr-0 ml-0  h-[677px] w-[1074.96px]">
+      <div>
+        <div class="card-content">
+          <table>
+            <thead>
+              <tr>
+                <th
+                  class="pt-1 pb-[5px] pr-[15px] pl-[15px] w-[654.542px] h-7 text-start text-[12px]  py-1.5 text-[#303030] border-b-2 border-[#dee2e6]">
+                  Game</th>
+                <th colspan="2"
+                  class="pt-1 pb-[5px] pr-[15px] pl-[15px] w-[128.125px] text-[12px] text-center py-1.5 text-[#303030] border-b-2 border-[#dee2e6]">
+                  1</th>
+                <th colspan="2"
+                  class="pt-1 pb-[5px] pr-[15px] pl-[15px] w-[128.125px] text-[12px] text-center py-1.5 text-[#303030] border-b-2 border-[#dee2e6]">
+                  x</th>
+                <th colspan="2"
+                  class="pt-1 pb-[5px] pr-[15px] pl-[15px] w-[128.125px] text-[12px] text-center py-1.5 text-[#303030] border-b-2 border-[#dee2e6]">
+                  2</th>
+              </tr>
+            </thead>
+            <tbody class="border-b-2 border-[#dee2e6] border-w-0 px-[15px] w-[1038.96px] h-[616.667px] leading-[18px]">
+              <tr class="border-b border-[#dee2e6]">
+                <td class="px-[15px] flex justify-between">
+                  <div class="game-name">
+                    <a href="" class="text-black text-[14px]"> Haryana v Railways
+                      <span>/ 24/12/2025 08:30 AM</span>
+                    </a>
+                  </div>
+                  <div class="game-icons float-right">
+                    <span class="game-icon w-[25px]  mt-0.5 inline-block">
+                      <img src="circle-solid-full.svg" alt="" class="h-3 w-3">
+                      <span class="active"></span>
+                    </span>
+                  </div>
+                </td>
+                <!-- first  -->
+                <td>
+                  <button
+                    class="back relative bg-[#72bbef] h-[25px] w-full min-w-10 text-center text-[14px] inline-block">
+                    <span class="odd">1.11</span>
+                  </button>
+                </td>
+                <td>
+                  <button
+                    class="back relative bg-[#faa9ba] h-[25px] w-full min-w-10 text-center text-[14px] inline-block">
+                    <span class="odd">0</span>
+                  </button>
+                </td>
+                <!-- 2nd -->
+                <td>
+                  <button
+                    class="back relative bg-[#72bbef] h-[25px] w-full min-w-10 text-center text-[14px] inline-block">
+                    <span class="odd">-</span>
+                  </button>
+                </td>
+                <td>
+                  <button
+                    class="back relative bg-[#faa9ba] h-[25px] w-full min-w-10 text-center text-[14px] inline-block">
+                    <span class="odd">-</span>
+                  </button>
+                </td>
+                <!-- 3rd -->
+                <td>
+                  <button
+                    class="back relative bg-[#72bbef] h-[25px] w-full min-w-10 text-center text-[14px] inline-block">
+                    <span class="odd">1.11</span>
+                  </button>
+                </td>
+                <td>
+                  <button
+                    class="back relative bg-[#faa9ba] h-[25px] w-full min-w-10 text-center text-[14px] inline-block">
+                    <span class="odd">0</span>
+                  </button>
+                </td>
+              </tr>
+              <!-- 2nd text whole div -->
+              <tr class="border-b border-[#dee2e6]">
+                <td class="px-[15px] flex justify-between">
+                  <div class="game-name">
+                    <a href="" class="text-black text-[14px]"> Puducherry v Tamil Nadu 
+                      <span>/ 24/12/2025 08:30 AM</span>
+                    </a>
+                  </div>
+                  <div class="game-icons float-right">
+                    <span class="game-icon w-[25px] text-right mt-0.5 inline-block">
+                      <img src="circle-solid-full.svg" alt="" class="h-3 w-3 filter invert-[0.2] sepia saturate-[6000%] hue-rotate-[85deg]">
+                      <span class="active"></span>
+                    </span>
+                  </div>
+                </td>
+                <!-- first  -->
+                <td>
+                  <button
+                    class="back relative bg-[#72bbef] h-[25px] w-full min-w-10 text-center text-[14px] inline-block">
+                    <span class="odd">1.66</span>
+                  </button>
+                </td>
+                <td>
+                  <button
+                    class="back relative bg-[#faa9ba] h-[25px] w-full min-w-10 text-center text-[14px] inline-block">
+                    <span class="odd">1.67</span>
+                  </button>
+                </td>
+                <!-- 2nd -->
+                <td>
+                  <button
+                    class="back relative bg-[#72bbef] h-[25px] w-full min-w-10 text-center text-[14px] inline-block">
+                    <span class="odd">-</span>
+                  </button>
+                </td>
+                <td>
+                  <button
+                    class="back relative bg-[#faa9ba] h-[25px] w-full min-w-10 text-center text-[14px] inline-block">
+                    <span class="odd">-</span>
+                  </button>
+                </td>
+                <!-- 3rd -->
+                <td>
+                  <button
+                    class="back relative bg-[#72bbef] h-[25px] w-full min-w-10 text-center text-[14px] inline-block">
+                    <span class="odd">2.46</span>
+                  </button>
+                </td>
+                <td>
+                  <button
+                    class="back relative bg-[#faa9ba] h-[25px] w-full min-w-10 text-center text-[14px] inline-block">
+                    <span class="odd">2.5</span>
+                  </button>
+                </td>
+              </tr>
+              <!-- 3rd whole div -->
+              <tr class="border-b border-[#dee2e6]">
+                <td class="px-[15px] flex justify-between">
+                  <div class="game-name">
+                    <a href="" class="text-black text-[14px]">  Chhattisgarh v Goa 
+                      <span>/ 24/12/2025 08:30 AM</span>
+                    </a>
+                  </div>
+                  <div class="game-icons float-right">
+                    <span class="game-icon w-[25px] text-right mt-0.5 inline-block">
+                      <img src="circle-solid-full.svg" alt="" class="h-3 w-3 text-right">
+                      <span class="active"></span>
+                    </span>
+                  </div>
+                </td>
+                <!-- first  -->
+                <td>
+                  <button
+                    class="back relative bg-[#72bbef] h-[25px] w-full min-w-10 text-center text-[14px] inline-block">
+                    <span class="odd">2.52</span>
+                  </button>
+                </td>
+                <td>
+                  <button
+                    class="back relative bg-[#faa9ba] h-[25px] w-full min-w-10 text-center text-[14px] inline-block">
+                    <span class="odd">4.1</span>
+                  </button>
+                </td>
+                <!-- 2nd -->
+                <td>
+                  <button
+                    class="back relative bg-[#72bbef] h-[25px] w-full min-w-10 text-center text-[14px] inline-block">
+                    <span class="odd">-</span>
+                  </button>
+                </td>
+                <td>
+                  <button
+                    class="back relative bg-[#faa9ba] h-[25px] w-full min-w-10 text-center text-[14px] inline-block">
+                    <span class="odd">-</span>
+                  </button>
+                </td>
+                <!-- 3rd -->
+                <td>
+                  <button
+                    class="back relative bg-[#72bbef] h-[25px] w-full min-w-10 text-center text-[14px] inline-block">
+                    <span class="odd">1.41</span>
+                  </button>
+                </td>
+                <td>
+                  <button
+                    class="back relative bg-[#faa9ba] h-[25px] w-full min-w-10 text-center text-[14px] inline-block">
+                    <span class="odd">1.6</span>
+                  </button>
+                </td>
+              </tr>
+              <!-- 4th whole div -->
+              <tr class="border-b border-[#dee2e6]">
+                <td class="px-[15px] flex justify-between">
+                  <div class="game-name">
+                    <a href="" class="text-black text-[14px]">  Bengal v Vidarbha 
+                      <span>/ 24/12/2025 08:30 AM</span>
+                    </a>
+                  </div>
+                  <div class="game-icons float-right">
+                    <span class="game-icon w-[25px] text-right mt-0.5 inline-block">
+                      <img src="circle-solid-full.svg" alt="" class="h-3 w-3 text-right">
+                      <span class="active"></span>
+                    </span>
+                  </div>
+                </td>
+                <!-- first  -->
+                <td>
+                  <button
+                    class="back relative bg-[#72bbef] h-[25px] w-full min-w-10 text-center text-[14px] inline-block">
+                    <span class="odd">5.6</span>
+                  </button>
+                </td>
+                <td>
+                  <button
+                    class="back relative bg-[#faa9ba] h-[25px] w-full min-w-10 text-center text-[14px] inline-block">
+                    <span class="odd">95</span>
+                  </button>
+                </td>
+                <!-- 2nd -->
+                <td>
+                  <button
+                    class="back relative bg-[#72bbef] h-[25px] w-full min-w-10 text-center text-[14px] inline-block">
+                    <span class="odd">-</span>
+                  </button>
+                </td>
+                <td>
+                  <button
+                    class="back relative bg-[#faa9ba] h-[25px] w-full min-w-10 text-center text-[14px] inline-block">
+                    <span class="odd">-</span>
+                  </button>
+                </td>
+                <!-- 3rd -->
+                <td>
+                  <button
+                    class="back relative bg-[#72bbef] h-[25px] w-full min-w-10 text-center text-[14px] inline-block">
+                    <span class="odd">1.1</span>
+                  </button>
+                </td>
+                <td>
+                  <button
+                    class="back relative bg-[#faa9ba] h-[25px] w-full min-w-10 text-center text-[14px] inline-block">
+                    <span class="odd">1.22</span>
+                  </button>
+                </td>
+              </tr>
+              <!-- 5th whole div -->
+              <tr class="border-b border-[#dee2e6]">
+                <td class="px-[15px] flex justify-between">
+                  <div class="game-name">
+                    <a href="" class="text-black text-[14px]"> Jharkhand v Karnataka 
+                      <span>/ 24/12/2025 08:30 AM</span>
+                    </a>
+                  </div>
+                  <div class="game-icons float-right">
+                    <span class="game-icon w-[25px] text-right mt-0.5 inline-block">
+                      <img src="circle-solid-full.svg" alt="" class="h-3 w-3 text-right">
+                      <span class="active"></span>
+                    </span>
+                  </div>
+                </td>
+                <!-- first  -->
+                <td>
+                  <button
+                    class="back relative bg-[#72bbef] h-[25px] w-full min-w-10 text-center text-[14px] inline-block">
+                    <span class="odd">1.4</span>
+                  </button>
+                </td>
+                <td>
+                  <button
+                    class="back relative bg-[#faa9ba] h-[25px] w-full min-w-10 text-center text-[14px] inline-block">
+                    <span class="odd">0</span>
+                  </button>
+                </td>
+                <!-- 2nd -->
+                <td>
+                  <button
+                    class="back relative bg-[#72bbef] h-[25px] w-full min-w-10 text-center text-[14px] inline-block">
+                    <span class="odd">-</span>
+                  </button>
+                </td>
+                <td>
+                  <button
+                    class="back relative bg-[#faa9ba] h-[25px] w-full min-w-10 text-center text-[14px] inline-block">
+                    <span class="odd">-</span>
+                  </button>
+                </td>
+                <!-- 3rd -->
+                <td>
+                  <button
+                    class="back relative bg-[#72bbef] h-[25px] w-full min-w-10 text-center text-[14px] inline-block">
+                    <span class="odd">1.4</span>
+                  </button>
+                </td>
+                <td>
+                  <button
+                    class="back relative bg-[#faa9ba] h-[25px] w-full min-w-10 text-center text-[14px] inline-block">
+                    <span class="odd">0</span>
+                  </button>
+                </td>
+              </tr>
+              <!-- 6th whole div -->
+              <tr class="border-b border-[#dee2e6]">
+                <td class="px-[15px] flex justify-between">
+                  <div class="game-name">
+                    <a href="" class="text-black text-[14px]">  Dubai Capitals v Sharjah Warriors 
+                      <span>/ 24/12/2025 08:30 AM</span>
+                    </a>
+                  </div>
+                  <div class="game-icons float-right">
+                    <span class="game-icon w-[25px] text-right mt-0.5 inline-block">
+                      <img src="circle-solid-full.svg" alt="" class="h-3 w-3 text-right">
+                      <span class="active"></span>
+                    </span>
+                  </div>
+                </td>
+                <!-- first  -->
+                <td>
+                  <button
+                    class="back relative bg-[#72bbef] h-[25px] w-full min-w-10 text-center text-[14px] inline-block">
+                    <span class="odd">1.4</span>
+                  </button>
+                </td>
+                <td>
+                  <button
+                    class="back relative bg-[#faa9ba] h-[25px] w-full min-w-10 text-center text-[14px] inline-block">
+                    <span class="odd">0</span>
+                  </button>
+                </td>
+                <!-- 2nd -->
+                <td>
+                  <button
+                    class="back relative bg-[#72bbef] h-[25px] w-full min-w-10 text-center text-[14px] inline-block">
+                    <span class="odd">-</span>
+                  </button>
+                </td>
+                <td>
+                  <button
+                    class="back relative bg-[#faa9ba] h-[25px] w-full min-w-10 text-center text-[14px] inline-block">
+                    <span class="odd">-</span>
+                  </button>
+                </td>
+                <!-- 3rd -->
+                <td>
+                  <button
+                    class="back relative bg-[#72bbef] h-[25px] w-full min-w-10 text-center text-[14px] inline-block">
+                    <span class="odd">1.4</span>
+                  </button>
+                </td>
+                <td>
+                  <button
+                    class="back relative bg-[#faa9ba] h-[25px] w-full min-w-10 text-center text-[14px] inline-block">
+                    <span class="odd">0</span>
+                  </button>
+                </td>
+              </tr>
+              <!-- 7th whole div -->
+              <tr class="border-b border-[#dee2e6]">
+                <td class="px-[15px] flex justify-between">
+                  <div class="game-name">
+                    <a href="" class="text-black text-[14px]"> Haryana v Railways  
+                      <span>/ 24/12/2025 08:30 AM</span>
+                    </a>
+                  </div>
+                  <div class="game-icons float-right">
+                    <span class="game-icon w-[25px] text-right mt-0.5 inline-block">
+                      <img src="circle-solid-full.svg" alt="" class="h-3 w-3 text-right">
+                      <span class="active"></span>
+                    </span>
+                  </div>
+                </td>
+                <!-- first  -->
+                <td>
+                  <button
+                    class="back relative bg-[#72bbef] h-[25px] w-full min-w-10 text-center text-[14px] inline-block">
+                    <span class="odd">1.61</span>
+                  </button>
+                </td>
+                <td>
+                  <button
+                    class="back relative bg-[#faa9ba] h-[25px] w-full min-w-10 text-center text-[14px] inline-block">
+                    <span class="odd">1.62</span>
+                  </button>
+                </td>
+                <!-- 2nd -->
+                <td>
+                  <button
+                    class="back relative bg-[#72bbef] h-[25px] w-full min-w-10 text-center text-[14px] inline-block">
+                    <span class="odd">12.5</span>
+                  </button>
+                </td>
+                <td>
+                  <button
+                    class="back relative bg-[#faa9ba] h-[25px] w-full min-w-10 text-center text-[14px] inline-block">
+                    <span class="odd">13</span>
+                  </button>
+                </td>
+                <!-- 3rd -->
+                <td>
+                  <button
+                    class="back relative bg-[#72bbef] h-[25px] w-full min-w-10 text-center text-[14px] inline-block">
+                    <span class="odd">12.5</span>
+                  </button>
+                </td>
+                <td>
+                  <button
+                    class="back relative bg-[#faa9ba] h-[25px] w-full min-w-10 text-center text-[14px] inline-block">
+                    <span class="odd">13</span>
+                  </button>
+                </td>
+              </tr>
+              <!-- 8th whole div -->
+              <tr class="border-b border-[#dee2e6]">
+                <td class="px-[15px] flex justify-between">
+                  <div class="game-name">
+                    <a href="" class="text-black text-[14px]"> Haryana v Railways
+                      <span>/ 24/12/2025 08:30 AM</span>
+                    </a>
+                  </div>
+                  <div class="game-icons float-right">
+                    <span class="game-icon w-[25px] text-right mt-0.5 inline-block">
+                      <img src="circle-solid-full.svg" alt="" class="h-3 w-3 text-right">
+                      <span class="active"></span>
+                    </span>
+                  </div>
+                </td>
+                <!-- first  -->
+                <td>
+                  <button
+                    class="back relative bg-[#72bbef] h-[25px] w-full min-w-10 text-center text-[14px] inline-block">
+                    <span class="odd">1.11</span>
+                  </button>
+                </td>
+                <td>
+                  <button
+                    class="back relative bg-[#faa9ba] h-[25px] w-full min-w-10 text-center text-[14px] inline-block">
+                    <span class="odd">0</span>
+                  </button>
+                </td>
+                <!-- 2nd -->
+                <td>
+                  <button
+                    class="back relative bg-[#72bbef] h-[25px] w-full min-w-10 text-center text-[14px] inline-block">
+                    <span class="odd">-</span>
+                  </button>
+                </td>
+                <td>
+                  <button
+                    class="back relative bg-[#faa9ba] h-[25px] w-full min-w-10 text-center text-[14px] inline-block">
+                    <span class="odd">-</span>
+                  </button>
+                </td>
+                <!-- 3rd -->
+                <td>
+                  <button
+                    class="back relative bg-[#72bbef] h-[25px] w-full min-w-10 text-center text-[14px] inline-block">
+                    <span class="odd">1.11</span>
+                  </button>
+                </td>
+                <td>
+                  <button
+                    class="back relative bg-[#faa9ba] h-[25px] w-full min-w-10 text-center text-[14px] inline-block">
+                    <span class="odd">0</span>
+                  </button>
+                </td>
+              </tr>
+              <!-- 9th whole div -->
+              <tr class="border-b border-[#dee2e6]">
+                <td class="px-[15px] flex justify-between">
+                  <div class="game-name">
+                    <a href="" class="text-black text-[14px]"> Haryana v Railways
+                      <span>/ 24/12/2025 08:30 AM</span>
+                    </a>
+                  </div>
+                  <div class="game-icons float-right">
+                    <span class="game-icon w-[25px] text-right mt-0.5 inline-block">
+                      <img src="circle-solid-full.svg" alt="" class="h-3 w-3 text-right">
+                      <span class="active"></span>
+                    </span>
+                  </div>
+                </td>
+                <!-- first  -->
+                <td>
+                  <button
+                    class="back relative bg-[#72bbef] h-[25px] w-full min-w-10 text-center text-[14px] inline-block">
+                    <span class="odd">1.11</span>
+                  </button>
+                </td>
+                <td>
+                  <button
+                    class="back relative bg-[#faa9ba] h-[25px] w-full min-w-10 text-center text-[14px] inline-block">
+                    <span class="odd">0</span>
+                  </button>
+                </td>
+                <!-- 2nd -->
+                <td>
+                  <button
+                    class="back relative bg-[#72bbef] h-[25px] w-full min-w-10 text-center text-[14px] inline-block">
+                    <span class="odd">-</span>
+                  </button>
+                </td>
+                <td>
+                  <button
+                    class="back relative bg-[#faa9ba] h-[25px] w-full min-w-10 text-center text-[14px] inline-block">
+                    <span class="odd">-</span>
+                  </button>
+                </td>
+                <!-- 3rd -->
+                <td>
+                  <button
+                    class="back relative bg-[#72bbef] h-[25px] w-full min-w-10 text-center text-[14px] inline-block">
+                    <span class="odd">1.11</span>
+                  </button>
+                </td>
+                <td>
+                  <button
+                    class="back relative bg-[#faa9ba] h-[25px] w-full min-w-10 text-center text-[14px] inline-block">
+                    <span class="odd">0</span>
+                  </button>
+                </td>
+              </tr>
+              <!-- 10th whole div -->
+              <tr class="border-b border-[#dee2e6]">
+                <td class="px-[15px] flex justify-between">
+                  <div class="game-name">
+                    <a href="" class="text-black text-[14px]">Zimbabwe U19 v Afghanistan U19 
+                      <span>/ 24/12/2025 08:30 AM</span>
+                    </a>
+                  </div>
+                  <div class="game-icons float-right">
+                    <span class="game-icon w-[25px] text-right mt-0.5 inline-block">
+                      <img src="circle-solid-full.svg" alt="" class="h-3 w-3 text-right">
+                      <span class="active"></span>
+                    </span>
+                  </div>
+                </td>
+                <!-- first  -->
+                <td>
+                  <button
+                    class="back relative bg-[#72bbef] h-[25px] w-full min-w-10 text-center text-[14px] inline-block">
+                    <span class="odd">1.11</span>
+                  </button>
+                </td>
+                <td>
+                  <button
+                    class="back relative bg-[#faa9ba] h-[25px] w-full min-w-10 text-center text-[14px] inline-block">
+                    <span class="odd">0</span>
+                  </button>
+                </td>
+                <!-- 2nd -->
+                <td>
+                  <button
+                    class="back relative bg-[#72bbef] h-[25px] w-full min-w-10 text-center text-[14px] inline-block">
+                    <span class="odd">-</span>
+                  </button>
+                </td>
+                <td>
+                  <button
+                    class="back relative bg-[#faa9ba] h-[25px] w-full min-w-10 text-center text-[14px] inline-block">
+                    <span class="odd">-</span>
+                  </button>
+                </td>
+                <!-- 3rd -->
+                <td>
+                  <button
+                    class="back relative bg-[#72bbef] h-[25px] w-full min-w-10 text-center text-[14px] inline-block">
+                    <span class="odd">1.11</span>
+                  </button>
+                </td>
+                <td>
+                  <button
+                    class="back relative bg-[#faa9ba] h-[25px] w-full min-w-10 text-center text-[14px] inline-block">
+                    <span class="odd">0</span>
+                  </button>
+                </td>
+              </tr>
+              <!-- 11th whole div -->
+              <tr class="border-b border-[#dee2e6]">
+                <td class="px-[15px] flex justify-between">
+                  <div class="game-name">
+                    <a href="" class="text-black text-[14px]"> Haryana v Railways
+                      <span>/ 24/12/2025 08:30 AM</span>
+                    </a>
+                  </div>
+                  <div class="game-icons float-right">
+                    <span class="game-icon w-[25px] text-right mt-0.5 inline-block">
+                      <img src="circle-solid-full.svg" alt="" class="h-3 w-3 text-right">
+                      <span class="active"></span>
+                    </span>
+                  </div>
+                </td>
+                <!-- first  -->
+                <td>
+                  <button
+                    class="back relative bg-[#72bbef] h-[25px] w-full min-w-10 text-center text-[14px] inline-block">
+                    <span class="odd">1.11</span>
+                  </button>
+                </td>
+                <td>
+                  <button
+                    class="back relative bg-[#faa9ba] h-[25px] w-full min-w-10 text-center text-[14px] inline-block">
+                    <span class="odd">0</span>
+                  </button>
+                </td>
+                <!-- 2nd -->
+                <td>
+                  <button
+                    class="back relative bg-[#72bbef] h-[25px] w-full min-w-10 text-center text-[14px] inline-block">
+                    <span class="odd">-</span>
+                  </button>
+                </td>
+                <td>
+                  <button
+                    class="back relative bg-[#faa9ba] h-[25px] w-full min-w-10 text-center text-[14px] inline-block">
+                    <span class="odd">-</span>
+                  </button>
+                </td>
+                <!-- 3rd -->
+                <td>
+                  <button
+                    class="back relative bg-[#72bbef] h-[25px] w-full min-w-10 text-center text-[14px] inline-block">
+                    <span class="odd">1.11</span>
+                  </button>
+                </td>
+                <td>
+                  <button
+                    class="back relative bg-[#faa9ba] h-[25px] w-full min-w-10 text-center text-[14px] inline-block">
+                    <span class="odd">0</span>
+                  </button>
+                </td>
+              </tr>
+              <!-- 12th whole div -->
+              <tr class="border-b border-[#dee2e6]">
+                <td class="px-[15px] flex justify-between">
+                  <div class="game-name">
+                    <a href="" class="text-black text-[14px]"> Haryana v Railways
+                      <span>/ 24/12/2025 08:30 AM</span>
+                    </a>
+                  </div>
+                  <div class="game-icons float-right">
+                    <span class="game-icon w-[25px] text-right mt-0.5 inline-block">
+                      <img src="circle-solid-full.svg" alt="" class="h-3 w-3 text-right">
+                      <span class="active"></span>
+                    </span>
+                  </div>
+                </td>
+                <!-- first  -->
+                <td>
+                  <button
+                    class="back relative bg-[#72bbef] h-[25px] w-full min-w-10 text-center text-[14px] inline-block">
+                    <span class="odd">1.11</span>
+                  </button>
+                </td>
+                <td>
+                  <button
+                    class="back relative bg-[#faa9ba] h-[25px] w-full min-w-10 text-center text-[14px] inline-block">
+                    <span class="odd">0</span>
+                  </button>
+                </td>
+                <!-- 2nd -->
+                <td>
+                  <button
+                    class="back relative bg-[#72bbef] h-[25px] w-full min-w-10 text-center text-[14px] inline-block">
+                    <span class="odd">-</span>
+                  </button>
+                </td>
+                <td>
+                  <button
+                    class="back relative bg-[#faa9ba] h-[25px] w-full min-w-10 text-center text-[14px] inline-block">
+                    <span class="odd">-</span>
+                  </button>
+                </td>
+                <!-- 3rd -->
+                <td>
+                  <button
+                    class="back relative bg-[#72bbef] h-[25px] w-full min-w-10 text-center text-[14px] inline-block">
+                    <span class="odd">1.11</span>
+                  </button>
+                </td>
+                <td>
+                  <button
+                    class="back relative bg-[#faa9ba] h-[25px] w-full min-w-10 text-center text-[14px] inline-block">
+                    <span class="odd">0</span>
+                  </button>
+                </td>
+              </tr>
+              <!-- 13th whole div -->
+              <tr class="border-b border-[#dee2e6]">
+                <td class="px-[15px] flex justify-between">
+                  <div class="game-name">
+                    <a href="" class="text-black text-[14px]"> Haryana v Railways
+                      <span>/ 24/12/2025 08:30 AM</span>
+                    </a>
+                  </div>
+                  <div class="game-icons float-right">
+                    <span class="game-icon w-[25px] text-right mt-0.5 inline-block">
+                      <img src="circle-solid-full.svg" alt="" class="h-3 w-3 text-right">
+                      <span class="active"></span>
+                    </span>
+                  </div>
+                </td>
+                <!-- first  -->
+                <td>
+                  <button
+                    class="back relative bg-[#72bbef] h-[25px] w-full min-w-10 text-center text-[14px] inline-block">
+                    <span class="odd">1.11</span>
+                  </button>
+                </td>
+                <td>
+                  <button
+                    class="back relative bg-[#faa9ba] h-[25px] w-full min-w-10 text-center text-[14px] inline-block">
+                    <span class="odd">0</span>
+                  </button>
+                </td>
+                <!-- 2nd -->
+                <td>
+                  <button
+                    class="back relative bg-[#72bbef] h-[25px] w-full min-w-10 text-center text-[14px] inline-block">
+                    <span class="odd">-</span>
+                  </button>
+                </td>
+                <td>
+                  <button
+                    class="back relative bg-[#faa9ba] h-[25px] w-full min-w-10 text-center text-[14px] inline-block">
+                    <span class="odd">-</span>
+                  </button>
+                </td>
+                <!-- 3rd -->
+                <td>
+                  <button
+                    class="back relative bg-[#72bbef] h-[25px] w-full min-w-10 text-center text-[14px] inline-block">
+                    <span class="odd">1.11</span>
+                  </button>
+                </td>
+                <td>
+                  <button
+                    class="back relative bg-[#faa9ba] h-[25px] w-full min-w-10 text-center text-[14px] inline-block">
+                    <span class="odd">0</span>
+                  </button>
+                </td>
+              </tr>
+              <!-- 14th whole div -->
+              <tr class="border-b border-[#dee2e6]">
+                <td class="px-[15px] flex justify-between">
+                  <div class="game-name">
+                    <a href="" class="text-black text-[14px]"> Haryana v Railways
+                      <span>/ 24/12/2025 08:30 AM</span>
+                    </a>
+                  </div>
+                  <div class="game-icons float-right">
+                    <span class="game-icon w-[25px] text-right mt-0.5 inline-block">
+                      <img src="circle-solid-full.svg" alt="" class="h-3 w-3 text-right">
+                      <span class="active"></span>
+                    </span>
+                  </div>
+                </td>
+                <!-- first  -->
+                <td>
+                  <button
+                    class="back relative bg-[#72bbef] h-[25px] w-full min-w-10 text-center text-[14px] inline-block">
+                    <span class="odd">1.11</span>
+                  </button>
+                </td>
+                <td>
+                  <button
+                    class="back relative bg-[#faa9ba] h-[25px] w-full min-w-10 text-center text-[14px] inline-block">
+                    <span class="odd">0</span>
+                  </button>
+                </td>
+                <!-- 2nd -->
+                <td>
+                  <button
+                    class="back relative bg-[#72bbef] h-[25px] w-full min-w-10 text-center text-[14px] inline-block">
+                    <span class="odd">-</span>
+                  </button>
+                </td>
+                <td>
+                  <button
+                    class="back relative bg-[#faa9ba] h-[25px] w-full min-w-10 text-center text-[14px] inline-block">
+                    <span class="odd">-</span>
+                  </button>
+                </td>
+                <!-- 3rd -->
+                <td>
+                  <button
+                    class="back relative bg-[#72bbef] h-[25px] w-full min-w-10 text-center text-[14px] inline-block">
+                    <span class="odd">1.11</span>
+                  </button>
+                </td>
+                <td>
+                  <button
+                    class="back relative bg-[#faa9ba] h-[25px] w-full min-w-10 text-center text-[14px] inline-block">
+                    <span class="odd">0</span>
+                  </button>
+                </td>
+              </tr>
+              <!-- 15th whole div -->
+              <tr class="border-b border-[#dee2e6]">
+                <td class="px-[15px] flex justify-between">
+                  <div class="game-name">
+                    <a href="" class="text-black text-[14px]"> Haryana v Railways
+                      <span>/ 24/12/2025 08:30 AM</span>
+                    </a>
+                  </div>
+                  <div class="game-icons float-right">
+                    <span class="game-icon w-[25px] text-right mt-0.5 inline-block">
+                      <img src="circle-solid-full.svg" alt="" class="h-3 w-3 text-right">
+                      <span class="active"></span>
+                    </span>
+                  </div>
+                </td>
+                <!-- first  -->
+                <td>
+                  <button
+                    class="back relative bg-[#72bbef] h-[25px] w-full min-w-10 text-center text-[14px] inline-block">
+                    <span class="odd">1.11</span>
+                  </button>
+                </td>
+                <td>
+                  <button
+                    class="back relative bg-[#faa9ba] h-[25px] w-full min-w-10 text-center text-[14px] inline-block">
+                    <span class="odd">0</span>
+                  </button>
+                </td>
+                <!-- 2nd -->
+                <td>
+                  <button
+                    class="back relative bg-[#72bbef] h-[25px] w-full min-w-10 text-center text-[14px] inline-block">
+                    <span class="odd">-</span>
+                  </button>
+                </td>
+                <td>
+                  <button
+                    class="back relative bg-[#faa9ba] h-[25px] w-full min-w-10 text-center text-[14px] inline-block">
+                    <span class="odd">-</span>
+                  </button>
+                </td>
+                <!-- 3rd -->
+                <td>
+                  <button
+                    class="back relative bg-[#72bbef] h-[25px] w-full min-w-10 text-center text-[14px] inline-block">
+                    <span class="odd">1.11</span>
+                  </button>
+                </td>
+                <td>
+                  <button
+                    class="back relative bg-[#faa9ba] h-[25px] w-full min-w-10 text-center text-[14px] inline-block">
+                    <span class="odd">0</span>
+                  </button>
+                </td>
+              </tr>
+              <!-- 16th whole div -->
+              <tr class="border-b border-[#dee2e6]">
+                <td class="px-[15px] flex justify-between">
+                  <div class="game-name">
+                    <a href="" class="text-black text-[14px]"> Haryana v Railways
+                      <span>/ 24/12/2025 08:30 AM</span>
+                    </a>
+                  </div>
+                  <div class="game-icons float-right">
+                    <span class="game-icon w-[25px] text-right mt-0.5 inline-block">
+                      <img src="circle-solid-full.svg" alt="" class="h-3 w-3 text-right">
+                      <span class="active"></span>
+                    </span>
+                  </div>
+                </td>
+                <!-- first  -->
+                <td>
+                  <button
+                    class="back relative bg-[#72bbef] h-[25px] w-full min-w-10 text-center text-[14px] inline-block">
+                    <span class="odd">1.11</span>
+                  </button>
+                </td>
+                <td>
+                  <button
+                    class="back relative bg-[#faa9ba] h-[25px] w-full min-w-10 text-center text-[14px] inline-block">
+                    <span class="odd">0</span>
+                  </button>
+                </td>
+                <!-- 2nd -->
+                <td>
+                  <button
+                    class="back relative bg-[#72bbef] h-[25px] w-full min-w-10 text-center text-[14px] inline-block">
+                    <span class="odd">-</span>
+                  </button>
+                </td>
+                <td>
+                  <button
+                    class="back relative bg-[#faa9ba] h-[25px] w-full min-w-10 text-center text-[14px] inline-block">
+                    <span class="odd">-</span>
+                  </button>
+                </td>
+                <!-- 3rd -->
+                <td>
+                  <button
+                    class="back relative bg-[#72bbef] h-[25px] w-full min-w-10 text-center text-[14px] inline-block">
+                    <span class="odd">1.11</span>
+                  </button>
+                </td>
+                <td>
+                  <button
+                    class="back relative bg-[#faa9ba] h-[25px] w-full min-w-10 text-center text-[14px] inline-block">
+                    <span class="odd">0</span>
+                  </button>
+                </td>
+              </tr>
+              <!-- 17th whole div -->
+              <tr class="border-b border-[#dee2e6]">
+                <td class="px-[15px] flex justify-between">
+                  <div class="game-name">
+                    <a href="" class="text-black text-[14px]"> Haryana v Railways
+                      <span>/ 24/12/2025 08:30 AM</span>
+                    </a>
+                  </div>
+                  <div class="game-icons float-right">
+                    <span class="game-icon w-[25px] text-right mt-0.5 inline-block">
+                      <img src="circle-solid-full.svg" alt="" class="h-3 w-3 text-right">
+                      <span class="active"></span>
+                    </span>
+                  </div>
+                </td>
+                <!-- first  -->
+                <td>
+                  <button
+                    class="back relative bg-[#72bbef] h-[25px] w-full min-w-10 text-center text-[14px] inline-block">
+                    <span class="odd">1.11</span>
+                  </button>
+                </td>
+                <td>
+                  <button
+                    class="back relative bg-[#faa9ba] h-[25px] w-full min-w-10 text-center text-[14px] inline-block">
+                    <span class="odd">0</span>
+                  </button>
+                </td>
+                <!-- 2nd -->
+                <td>
+                  <button
+                    class="back relative bg-[#72bbef] h-[25px] w-full min-w-10 text-center text-[14px] inline-block">
+                    <span class="odd">-</span>
+                  </button>
+                </td>
+                <td>
+                  <button
+                    class="back relative bg-[#faa9ba] h-[25px] w-full min-w-10 text-center text-[14px] inline-block">
+                    <span class="odd">-</span>
+                  </button>
+                </td>
+                <!-- 3rd -->
+                <td>
+                  <button
+                    class="back relative bg-[#72bbef] h-[25px] w-full min-w-10 text-center text-[14px] inline-block">
+                    <span class="odd">1.11</span>
+                  </button>
+                </td>
+                <td>
+                  <button
+                    class="back relative bg-[#faa9ba] h-[25px] w-full min-w-10 text-center text-[14px] inline-block">
+                    <span class="odd">0</span>
+                  </button>
+                </td>
+              </tr>
+              <!-- 18th whole div -->
+              <tr class="border-b border-[#dee2e6]">
+                <td class="px-[15px] flex justify-between">
+                  <div class="game-name">
+                    <a href="" class="text-black text-[14px]"> Haryana v Railways
+                      <span>/ 24/12/2025 08:30 AM</span>
+                    </a>
+                  </div>
+                  <div class="game-icons float-right">
+                    <span class="game-icon w-[25px] text-right mt-0.5 inline-block">
+                      <img src="circle-solid-full.svg" alt="" class="h-3 w-3 text-right">
+                      <span class="active"></span>
+                    </span>
+                  </div>
+                </td>
+                <!-- first  -->
+                <td>
+                  <button
+                    class="back relative bg-[#72bbef] h-[25px] w-full min-w-10 text-center text-[14px] inline-block">
+                    <span class="odd">1.11</span>
+                  </button>
+                </td>
+                <td>
+                  <button
+                    class="back relative bg-[#faa9ba] h-[25px] w-full min-w-10 text-center text-[14px] inline-block">
+                    <span class="odd">0</span>
+                  </button>
+                </td>
+                <!-- 2nd -->
+                <td>
+                  <button
+                    class="back relative bg-[#72bbef] h-[25px] w-full min-w-10 text-center text-[14px] inline-block">
+                    <span class="odd">-</span>
+                  </button>
+                </td>
+                <td>
+                  <button
+                    class="back relative bg-[#faa9ba] h-[25px] w-full min-w-10 text-center text-[14px] inline-block">
+                    <span class="odd">-</span>
+                  </button>
+                </td>
+                <!-- 3rd -->
+                <td>
+                  <button
+                    class="back relative bg-[#72bbef] h-[25px] w-full min-w-10 text-center text-[14px] inline-block">
+                    <span class="odd">1.11</span>
+                  </button>
+                </td>
+                <td>
+                  <button
+                    class="back relative bg-[#faa9ba] h-[25px] w-full min-w-10 text-center text-[14px] inline-block">
+                    <span class="odd">0</span>
+                  </button>
+                </td>
+              </tr>
+              <!-- 19th whole div -->
+              <tr class="border-b border-[#dee2e6]">
+                <td class="px-[15px] flex justify-between">
+                  <div class="game-name">
+                    <a href="" class="text-black text-[14px]"> Haryana v Railways
+                      <span>/ 24/12/2025 08:30 AM</span>
+                    </a>
+                  </div>
+                  <div class="game-icons float-right">
+                    <span class="game-icon w-[25px] text-right mt-0.5 inline-block">
+                      <img src="circle-solid-full.svg" alt="" class="h-3 w-3 text-right">
+                      <span class="active"></span>
+                    </span>
+                  </div>
+                </td>
+                <!-- first  -->
+                <td>
+                  <button
+                    class="back relative bg-[#72bbef] h-[25px] w-full min-w-10 text-center text-[14px] inline-block">
+                    <span class="odd">1.11</span>
+                  </button>
+                </td>
+                <td>
+                  <button
+                    class="back relative bg-[#faa9ba] h-[25px] w-full min-w-10 text-center text-[14px] inline-block">
+                    <span class="odd">0</span>
+                  </button>
+                </td>
+                <!-- 2nd -->
+                <td>
+                  <button
+                    class="back relative bg-[#72bbef] h-[25px] w-full min-w-10 text-center text-[14px] inline-block">
+                    <span class="odd">-</span>
+                  </button>
+                </td>
+                <td>
+                  <button
+                    class="back relative bg-[#faa9ba] h-[25px] w-full min-w-10 text-center text-[14px] inline-block">
+                    <span class="odd">-</span>
+                  </button>
+                </td>
+                <!-- 3rd -->
+                <td>
+                  <button
+                    class="back relative bg-[#72bbef] h-[25px] w-full min-w-10 text-center text-[14px] inline-block">
+                    <span class="odd">1.11</span>
+                  </button>
+                </td>
+                <td>
+                  <button
+                    class="back relative bg-[#faa9ba] h-[25px] w-full min-w-10 text-center text-[14px] inline-block">
+                    <span class="odd">0</span>
+                  </button>
+                </td>
+              </tr>
+              <!-- 19th whole div -->
+              <tr class="border-b border-[#dee2e6]">
+                <td class="px-[15px] flex justify-between">
+                  <div class="game-name">
+                    <a href="" class="text-black text-[14px]"> Haryana v Railways
+                      <span>/ 24/12/2025 08:30 AM</span>
+                    </a>
+                  </div>
+                  <div class="game-icons float-right">
+                    <span class="game-icon w-[25px] text-right mt-0.5 inline-block">
+                      <img src="circle-solid-full.svg" alt="" class="h-3 w-3 text-right">
+                      <span class="active"></span>
+                    </span>
+                  </div>
+                </td>
+                <!-- first  -->
+                <td>
+                  <button
+                    class="back relative bg-[#72bbef] h-[25px] w-full min-w-10 text-center text-[14px] inline-block">
+                    <span class="odd">1.11</span>
+                  </button>
+                </td>
+                <td>
+                  <button
+                    class="back relative bg-[#faa9ba] h-[25px] w-full min-w-10 text-center text-[14px] inline-block">
+                    <span class="odd">0</span>
+                  </button>
+                </td>
+                <!-- 2nd -->
+                <td>
+                  <button
+                    class="back relative bg-[#72bbef] h-[25px] w-full min-w-10 text-center text-[14px] inline-block">
+                    <span class="odd">-</span>
+                  </button>
+                </td>
+                <td>
+                  <button
+                    class="back relative bg-[#faa9ba] h-[25px] w-full min-w-10 text-center text-[14px] inline-block">
+                    <span class="odd">-</span>
+                  </button>
+                </td>
+                <!-- 3rd -->
+                <td>
+                  <button
+                    class="back relative bg-[#72bbef] h-[25px] w-full min-w-10 text-center text-[14px] inline-block">
+                    <span class="odd">1.11</span>
+                  </button>
+                </td>
+                <td>
+                  <button
+                    class="back relative bg-[#faa9ba] h-[25px] w-full min-w-10 text-center text-[14px] inline-block">
+                    <span class="odd">0</span>
+                  </button>
+                </td>
+              </tr>
+              <!-- 20th whole div -->
+              <tr class="border-b border-[#dee2e6]">
+                <td class="px-[15px] flex justify-between">
+                  <div class="game-name">
+                    <a href="" class="text-black text-[14px]"> Haryana v Railways
+                      <span>/ 24/12/2025 08:30 AM</span>
+                    </a>
+                  </div>
+                  <div class="game-icons float-right">
+                    <span class="game-icon w-[25px] text-right mt-0.5 inline-block">
+                      <img src="circle-solid-full.svg" alt="" class="h-3 w-3 text-right">
+                      <span class="active"></span>
+                    </span>
+                  </div>
+                </td>
+                <!-- first  -->
+                <td>
+                  <button
+                    class="back relative bg-[#72bbef] h-[25px] w-full min-w-10 text-center text-[14px] inline-block">
+                    <span class="odd">1.11</span>
+                  </button>
+                </td>
+                <td>
+                  <button
+                    class="back relative bg-[#faa9ba] h-[25px] w-full min-w-10 text-center text-[14px] inline-block">
+                    <span class="odd">0</span>
+                  </button>
+                </td>
+                <!-- 2nd -->
+                <td>
+                  <button
+                    class="back relative bg-[#72bbef] h-[25px] w-full min-w-10 text-center text-[14px] inline-block">
+                    <span class="odd">-</span>
+                  </button>
+                </td>
+                <td>
+                  <button
+                    class="back relative bg-[#faa9ba] h-[25px] w-full min-w-10 text-center text-[14px] inline-block">
+                    <span class="odd">-</span>
+                  </button>
+                </td>
+                <!-- 3rd -->
+                <td>
+                  <button
+                    class="back relative bg-[#72bbef] h-[25px] w-full min-w-10 text-center text-[14px] inline-block">
+                    <span class="odd">1.11</span>
+                  </button>
+                </td>
+                <td>
+                  <button
+                    class="back relative bg-[#faa9ba] h-[25px] w-full min-w-10 text-center text-[14px] inline-block">
+                    <span class="odd">0</span>
+                  </button>
+                </td>
+              </tr>
+              <!--  21th whole div-->
+              <tr class="border-b border-[#dee2e6]">
+                <td class="px-[15px] flex justify-between">
+                  <div class="game-name">
+                    <a href="" class="text-black text-[14px]"> Haryana v Railways
+                      <span>/ 24/12/2025 08:30 AM</span>
+                    </a>
+                  </div>
+                  <div class="game-icons float-right">
+                    <span class="game-icon w-[25px] text-right mt-0.5 inline-block">
+                      <img src="circle-solid-full.svg" alt="" class="h-3 w-3 text-right">
+                      <span class="active"></span>
+                    </span>
+                  </div>
+                </td>
+                <!-- first  -->
+                <td>
+                  <button
+                    class="back relative bg-[#72bbef] h-[25px] w-full min-w-10 text-center text-[14px] inline-block">
+                    <span class="odd">1.11</span>
+                  </button>
+                </td>
+                <td>
+                  <button
+                    class="back relative bg-[#faa9ba] h-[25px] w-full min-w-10 text-center text-[14px] inline-block">
+                    <span class="odd">0</span>
+                  </button>
+                </td>
+                <!-- 2nd -->
+                <td>
+                  <button
+                    class="back relative bg-[#72bbef] h-[25px] w-full min-w-10 text-center text-[14px] inline-block">
+                    <span class="odd">-</span>
+                  </button>
+                </td>
+                <td>
+                  <button
+                    class="back relative bg-[#faa9ba] h-[25px] w-full min-w-10 text-center text-[14px] inline-block">
+                    <span class="odd">-</span>
+                  </button>
+                </td>
+                <!-- 3rd -->
+                <td>
+                  <button
+                    class="back relative bg-[#72bbef] h-[25px] w-full min-w-10 text-center text-[14px] inline-block">
+                    <span class="odd">1.11</span>
+                  </button>
+                </td>
+                <td>
+                  <button
+                    class="back relative bg-[#faa9ba] h-[25px] w-full min-w-10 text-center text-[14px] inline-block">
+                    <span class="odd">0</span>
+                  </button>
+                </td>
+              </tr>
+              <!-- 22 whole div -->
+              <tr class="border-b border-[#dee2e6]">
+                <td class="px-[15px] flex justify-between">
+                  <div class="game-name">
+                    <a href="" class="text-black text-[14px]"> Haryana v Railways
+                      <span>/ 24/12/2025 08:30 AM</span>
+                    </a>
+                  </div>
+                  <div class="game-icons float-right">
+                    <span class="game-icon w-[25px] text-right mt-0.5 inline-block">
+                      <img src="circle-solid-full.svg" alt="" class="h-3 w-3 text-right">
+                      <span class="active"></span>
+                    </span>
+                  </div>
+                </td>
+                <!-- first  -->
+                <td>
+                  <button
+                    class="back relative bg-[#72bbef] h-[25px] w-full min-w-10 text-center text-[14px] inline-block">
+                    <span class="odd">1.11</span>
+                  </button>
+                </td>
+                <td>
+                  <button
+                    class="back relative bg-[#faa9ba] h-[25px] w-full min-w-10 text-center text-[14px] inline-block">
+                    <span class="odd">0</span>
+                  </button>
+                </td>
+                <!-- 2nd -->
+                <td>
+                  <button
+                    class="back relative bg-[#72bbef] h-[25px] w-full min-w-10 text-center text-[14px] inline-block">
+                    <span class="odd">-</span>
+                  </button>
+                </td>
+                <td>
+                  <button
+                    class="back relative bg-[#faa9ba] h-[25px] w-full min-w-10 text-center text-[14px] inline-block">
+                    <span class="odd">-</span>
+                  </button>
+                </td>
+                <!-- 3rd -->
+                <td>
+                  <button
+                    class="back relative bg-[#72bbef] h-[25px] w-full min-w-10 text-center text-[14px] inline-block">
+                    <span class="odd">1.11</span>
+                  </button>
+                </td>
+                <td>
+                  <button
+                    class="back relative bg-[#faa9ba] h-[25px] w-full min-w-10 text-center text-[14px] inline-block">
+                    <span class="odd">0</span>
+                  </button>
+                </td>
+              </tr>
+              <!-- 23 whole div -->
+              <tr class="border-b border-[#dee2e6]">
+                <td class="px-[15px] flex justify-between">
+                  <div class="game-name">
+                    <a href="" class="text-black text-[14px]"> Haryana v Railways
+                      <span>/ 24/12/2025 08:30 AM</span>
+                    </a>
+                  </div>
+                  <div class="game-icons float-right">
+                    <span class="game-icon w-[25px] text-right mt-0.5 inline-block">
+                      <img src="circle-solid-full.svg" alt="" class="h-3 w-3 text-right">
+                      <span class="active"></span>
+                    </span>
+                  </div>
+                </td>
+                <!-- first  -->
+                <td>
+                  <button
+                    class="back relative bg-[#72bbef] h-[25px] w-full min-w-10 text-center text-[14px] inline-block">
+                    <span class="odd">1.11</span>
+                  </button>
+                </td>
+                <td>
+                  <button
+                    class="back relative bg-[#faa9ba] h-[25px] w-full min-w-10 text-center text-[14px] inline-block">
+                    <span class="odd">0</span>
+                  </button>
+                </td>
+                <!-- 2nd -->
+                <td>
+                  <button
+                    class="back relative bg-[#72bbef] h-[25px] w-full min-w-10 text-center text-[14px] inline-block">
+                    <span class="odd">-</span>
+                  </button>
+                </td>
+                <td>
+                  <button
+                    class="back relative bg-[#faa9ba] h-[25px] w-full min-w-10 text-center text-[14px] inline-block">
+                    <span class="odd">-</span>
+                  </button>
+                </td>
+                <!-- 3rd -->
+                <td>
+                  <button
+                    class="back relative bg-[#72bbef] h-[25px] w-full min-w-10 text-center text-[14px] inline-block">
+                    <span class="odd">1.11</span>
+                  </button>
+                </td>
+                <td>
+                  <button
+                    class="back relative bg-[#faa9ba] h-[25px] w-full min-w-10 text-center text-[14px] inline-block">
+                    <span class="odd">0</span>
+                  </button>
+                </td>
+              </tr>
+              <!-- 24 whole div -->
+              <tr class="border-b border-[#dee2e6]0">
+                <td class="px-[15px] flex justify-between">
+                  <div class="game-name">
+                    <a href="" class="text-black text-[14px]"> Haryana v Railways
+                      <span>/ 24/12/2025 08:30 AM</span>
+                    </a>
+                  </div>
+                  <div class="game-icons float-right">
+                    <span class="game-icon w-[25px] text-right mt-0.5 inline-block">
+                      <img src="circle-solid-full.svg" alt="" class="h-3 w-3 text-right">
+                      <span class="active"></span>
+                    </span>
+                  </div>
+                </td>
+                <!-- first  -->
+                <td>
+                  <button
+                    class="back relative bg-[#72bbef] h-[25px] w-full min-w-10 text-center text-[14px] inline-block">
+                    <span class="odd">1.11</span>
+                  </button>
+                </td>
+                <td>
+                  <button
+                    class="back relative bg-[#faa9ba] h-[25px] w-full min-w-10 text-center text-[14px] inline-block">
+                    <span class="odd">0</span>
+                  </button>
+                </td>
+                <!-- 2nd -->
+                <td>
+                  <button
+                    class="back relative bg-[#72bbef] h-[25px] w-full min-w-10 text-center text-[14px] inline-block">
+                    <span class="odd">-</span>
+                  </button>
+                </td>
+                <td>
+                  <button
+                    class="back relative bg-[#faa9ba] h-[25px] w-full min-w-10 text-center text-[14px] inline-block">
+                    <span class="odd">-</span>
+                  </button>
+                </td>
+                <!-- 3rd -->
+                <td>
+                  <button
+                    class="back relative bg-[#72bbef] h-[25px] w-full min-w-10 text-center text-[14px] inline-block">
+                    <span class="odd">1.11</span>
+                  </button>
+                </td>
+                <td>
+                  <button
+                    class="back relative bg-[#faa9ba] h-[25px] w-full min-w-10 text-center text-[14px] inline-block ">
+                    <span class="odd">0</span>
+                  </button>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- popular nav -->
+<div>
+  <div class="app-casino">
+    <div class="container-fluid mx-0 pr-[9px] pl-4 w-[1066.96px] mt-30 relative top-28">
+      <div class="md2 relative">
+        <ul
+          class="navSports mb-3 h-8 overflow-x-auto bg-[linear-gradient(180deg,#030a12,#444647_42%,#58595a)] shadow-[0_8px_8px_-7px_#000] hidden sm:flex">
+          <li
+            class="navItemsSports text-[16px] px-[15px] py-1 text-white bg-[linear-gradient(180deg,#030a12,#444647_42%,#58595a)] border-r border-white in-w-max"
+            [ngClass]="{'bg-active-gradient': activeNav === 'Popular'}" (click)="setActiveNav('Popular')">
+            <a href="javascript:void(0)">Popular</a>
+          </li>
+          <li
+            class="navItemsSports text-[16px] px-[15px] py-1 text-white bg-[linear-gradient(180deg,#030a12,#444647_42%,#58595a)] border-r border-white min-w-max"
+            [ngClass]="{'bg-active-gradient': activeNav === 'Teen Patti'}" (click)="setActiveNav('Teen Patti')">
+            <a href="javascript:void(0)">Teen Patti</a>
+          </li>
+          <li
+            class="navItemsSports text-[16px] px-4 py-1 text-white bg-[linear-gradient(180deg,#030a12,#444647_42%,#58595a)] border-r border-white min-w-max"
+            [ngClass]="{'bg-active-gradient': activeNav === 'Lucky 7'}" (click)="setActiveNav('Lucky 7')">
+            <a href="javascript:void(0)">Lucky 7</a>
+          </li>
+          <li
+            class="navItemsSports text-[16px] px-4 py-1 text-white bg-[linear-gradient(180deg,#030a12,#444647_42%,#58595a)] border-r border-white min-w-max"
+            [ngClass]="{'bg-active-gradient': activeNav === 'Dragon Tiger'}" (click)="setActiveNav('Dragon Tiger')">
+            <a href="javascript:void(0)">Dragon Tiger</a>
+          </li>
+          <li
+            class="navItemsSports text-[16px] px-4 py-1 text-white bg-[linear-gradient(180deg,#030a12,#444647_42%,#58595a)] border-r border-white min-w-max"
+            [ngClass]="{'bg-active-gradient': activeNav === 'Baccarat'}" (click)="setActiveNav('Baccarat')">
+            <a href="javascript:void(0)">Baccarat</a>
+          </li>
+          <li
+            class="navItemsSports text-[16px] px-4 py-1 text-white bg-[linear-gradient(180deg,#030a12,#444647_42%,#58595a)] border-r border-white min-w-max"
+            [ngClass]="{'bg-active-gradient': activeNav === 'Abdar Bahar'}" (click)="setActiveNav('Abdar Bahar')">
+            <a href="javascript:void(0)">Andar Bahar</a>
+          </li>
+          <li
+            class="navItemsSports text-[16px] px-4 py-1 text-white bg-[linear-gradient(180deg,#030a12,#444647_42%,#58595a)] border-r border-white min-w-max"
+            [ngClass]="{'bg-active-gradient': activeNav === 'Poker'}" (click)="setActiveNav('Poker')">
+            <a href="javascript:void(0)">Poker</a>
+          </li>
+          <li
+            class="navItemsSports text-[16px] px-4 py-1 text-white bg-[linear-gradient(180deg,#030a12,#444647_42%,#58595a)] border-r border-white min-w-max"
+            [ngClass]="{'bg-active-gradient': activeNav === 'Bollywood'}" (click)="setActiveNav('Bollywood')">
+            <a href="javascript:void(0)">Bollywood</a>
+          </li>
+          <li
+            class="navItemsSports text-[16px] px-4 py-1 text-white bg-[linear-gradient(180deg,#030a12,#444647_42%,#58595a)] border-r border-white min-w-max"
+            [ngClass]="{'bg-active-gradient': activeNav === 'Region'}" (click)="setActiveNav('Region')">
+            <a href="javascript:void(0)">Region</a>
+          </li>
+          <li
+            class="navItemsSports text-[16px] px-4 py-1 text-white bg-[linear-gradient(180deg,#030a12,#444647_42%,#58595a)] border-r border-white min-w-max"
+            [ngClass]="{'bg-active-gradient': activeNav === 'Other'}" (click)="setActiveNav('Other')">
+            <a href="javascript:void(0)">Other</a>
+          </li>
+          <li
+            class="navItemsSports text-[16px] px-4 py-1 text-white bg-[linear-gradient(180deg,#030a12,#444647_42%,#58595a)] border-r border-white min-w-max"
+            [ngClass]="{'bg-active-gradient': activeNav === 'Virtual'}" (click)="setActiveNav('Virtual')">
+            <a href="javascript:void(0)">Virtual</a>
+        </ul>
+        <!-- cards -->
+        <div class="container-fluid mx-0 w-full m-0 p-[3px] overflow-hidden hidden sm:flex pl-[3px] ">
+          <div class="rows flex flex-wrap h-[1020px] ml-1.5 mr-1.5 mt-[3px]">
+            <!-- 1st -->
+            <div
+              class="card1 basis-auto grow-0 shrink-0 h-60 mt-0 max-w-full pl-1 pr-[4.8px] text-center w-[169.91px] shadow-xl ">
+              <div class="casinoicons-custom shadow-[0_5px_9px_-3px_rgb(33,37,41)] rounded-lg mb-[15px] relative">
+                <img src="abevolution+gaming-min.png" alt="" class=" h-60">
+              </div>
+            </div>
+            <!-- 2nd-->
+            <div
+              class="card1 basis-auto grow-0 shrink-0 h-60 mt-0 max-w-full pl-1 pr-[4.8px] text-center w-[169.91px] shadow-xl">
+              <div class="casinoicons-custom shadow-[0_5px_9px_-3px_rgb(33,37,41)] rounded-lg mb-[15px] relative">
+                <img src="Lucky-7.jpg" alt="" class=" h-60">
+              </div>
+            </div>
+            <!-- 3rd -->
+            <div
+              class="card1 basis-auto grow-0 shrink-0 h-60 mt-0 max-w-full pl-1 pr-[4.8px] text-center w-[169.91px] shadow-xl  ">
+              <div class="casinoicons-custom  rounded-lg   mb-[15px] relative">
+                <img src="Dragontiger.jpg" alt="" class=" h-60">
+              </div>
+            </div>
+            <!-- 4th -->
+            <div
+              class="card1 basis-auto grow-0 shrink-0 h-60 mt-0 max-w-full pl-1 pr-[4.8px] text-center w-[169.91px] shadow-xl  ">
+              <div class="casinoicons-custom  rounded-lg   mb-[15px] relative">
+              </div>
+            </div>
+            <!-- 5th -->
+            <div
+              class="card1 basis-auto grow-0 shrink-0 h-60 mt-0 max-w-full pl-1 pr-[4.8px] text-center w-[169.91px] shadow-xl  ">
+              <div class="casinoicons-custom  rounded-lg   mb-[15px] relative">
+                <img src="Baccarat.jpg" alt="" class=" h-60">
+              </div>
+            </div>
+            <!-- 6th -->
+            <div
+              class="card1 basis-auto grow-0 shrink-0 h-60 mt-0 max-w-full pl-1 pr-[4.8px] text-center w-[169.91px] shadow-xl  ">
+              <div class="casinoicons-custom  rounded-lg   mb-[15px] relative">
+              </div>
+            </div>
+            <!-- 7th -->
+            <div
+              class="card1 basis-auto grow-0 shrink-0 h-60 mt-0 max-w-full pl-1 pr-[4.8px] text-center w-[169.91px] shadow-xl  ">
+              <div class="casinoicons-custom  rounded-lg   mb-[15px] relative">
+                <img src="Poker.jpg" alt="" class="h-60">
+              </div>
+            </div>
+            <!-- 8th -->
+            <div
+              class="card1 basis-auto grow-0 shrink-0 h-60 mt-0 max-w-full pl-1 pr-[4.8px] text-center w-[169.91px] shadow-xl  ">
+              <div class="casinoicons-custom  rounded-lg   mb-[15px] relative">
+              </div>
+            </div>
+            <!-- 9th -->
+            <div
+              class="card1 basis-auto grow-0 shrink-0 h-60 mt-0 max-w-full pl-1 pr-[4.8px] text-center w-[169.91px] shadow-xl  ">
+              <div class="casinoicons-custom  rounded-lg   mb-[15px] relative">
+                <img src="CardRace.jpg" alt="" class="h-60">
+
+              </div>
+            </div>
+            <!-- 10th -->
+            <div
+              class="card1 basis-auto grow-0 shrink-0 h-60 mt-0 max-w-full pl-1 pr-[4.8px] text-center w-[169.91px] shadow-xl  ">
+              <div class="casinoicons-custom  rounded-lg   mb-[15px] relative">
+              </div>
+            </div>
+            <!-- 11th -->
+            <div
+              class="card1 basis-auto grow-0 shrink-0 h-60 mt-0 max-w-full pl-1 pr-[4.8px] text-center w-[169.91px] shadow-xl  ">
+              <div class="casinoicons-custom  rounded-lg   mb-[15px] relative">
+              </div>
+            </div>
+            <!-- 12th -->
+            <div
+              class="card1 basis-auto grow-0 shrink-0 h-60 mt-0 max-w-full pl-1 pr-[4.8px] text-center w-[169.91px] shadow-xl  ">
+              <div class="casinoicons-custom  rounded-lg   mb-[15px] relative">
+                <img src="Vimaan1.jpg" alt="" class="h-60">
+              </div>
+            </div>
+            <!-- 13th -->
+            <div
+              class="card1 basis-auto grow-0 shrink-0 h-60 mt-0 max-w-full pl-1 pr-[4.8px] text-center w-[169.91px] shadow-xl  ">
+              <div class="casinoicons-custom  rounded-lg   mb-[15px] relative">
+                <img src="Balloon.jpg" alt="" class="h-60">
+              </div>
+            </div>
+            <!-- 14 -->
+            <div
+              class="card1 basis-auto grow-0 shrink-0 h-60 mt-0 max-w-full pl-1 pr-[4.8px] text-center w-[169.91px] shadow-xl  ">
+              <div class="casinoicons-custom  rounded-lg   mb-[15px] relative">
+                <img src="abevolution+gaming-min.png" alt="" class="h-60">
+              </div>
+            </div>
+            <!-- 15th -->
+            <div
+              class="card1 basis-auto grow-0 shrink-0 h-60 mt-0 max-w-full pl-1 pr-[4.8px] text-center w-[169.91px] shadow-xl  ">
+              <div class="casinoicons-custom  rounded-lg   mb-[15px] relative">
+              </div>
+            </div>
+            <!-- 16th-->
+            <div
+              class="card1 basis-auto grow-0 shrink-0 h-60 mt-0 max-w-full pl-1 pr-[4.8px] text-center w-[169.91px] shadow-xl ">
+              <div class="casinoicons-custom shadow-[0_5px_9px_-3px_rgb(33,37,41)] rounded-lg mb-[15px] relative">
+              </div>
+            </div>
+            <!-- 17th-->
+            <div
+              class="card1 basis-auto grow-0 shrink-0 h-60 mt-0 max-w-full pl-1 pr-[4.8px] text-center w-[169.91px] shadow-xl">
+              <div class="casinoicons-custom shadow-[0_5px_9px_-3px_rgb(33,37,41)] rounded-lg mb-[15px] relative">
+              </div>
+            </div>
+            <!-- 18th -->
+            <div
+              class="card1 basis-auto grow-0 shrink-0 h-60 mt-0 max-w-full pl-1 pr-[4.8px] text-center w-[169.91px] shadow-xl  ">
+              <div class="casinoicons-custom  rounded-lg   mb-[15px] relative">
+                <img src="gaming-2-min.png" alt="" class="h-60">
+              </div>
+            </div>
+            <!-- 19th -->
+            <div
+              class="card1 basis-auto grow-0 shrink-0 h-60 mt-0 max-w-full pl-1 pr-[4.8px] text-center w-[169.91px] shadow-xl  ">
+              <div class="casinoicons-custom  rounded-lg   mb-[15px] relative">
+                <img src="gaming-3-min.png" alt="" class="h-60">
+              </div>
+            </div>
+
+          </div>
+        </div>
