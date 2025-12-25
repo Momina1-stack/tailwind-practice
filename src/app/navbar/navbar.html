@@ -1,7 +1,8 @@
 <!-- desktop navbar -->
-<div class="app-header-nav h-[39px] hidden sm:block md:block w-full z-20 lg:fixed ">
+<div class="app-header-nav h-[39px] hidden w-full z-20 lg:fixed [@media(min-width:992px)]:block">
   <div
-    class="header-bottom  bg-[linear-gradient(-180deg,#f4b501_0%,#f68700_100%)] pt-1 pb-1 ml-0  relative top-20 min-h-[27px]">
+    class="header-bottom  bg-[linear-gradient(-180deg,#f4b501_0%,#f68700_100%)] pt-1 pb-1 ml-0  relative top-20 min-h-[27px]  
+    hidden [@media(min-width:992px)]:flex">
     <nav class="navbar relative flex flex-wrap items-center justify-between ">
       <button class="navbar-toggle text-[15px] leading-1 bg-transparent border-2 border-transparent rounded-[3px]">
         <span class="toggle-icon"></span>
