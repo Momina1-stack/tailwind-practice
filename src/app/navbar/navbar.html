@@ -1,6 +1,7 @@
 <!-- desktop navbar -->
 <div class="app-header-nav h-[39px] hidden sm:block md:block w-full z-20 lg:fixed ">
-  <div class="header-bottom  bg-[linear-gradient(-180deg,#f4b501_0%,#f68700_100%)] pt-1 pb-1 ml-0  relative top-20 min-h-[27px]">
+  <div
+    class="header-bottom  bg-[linear-gradient(-180deg,#f4b501_0%,#f68700_100%)] pt-1 pb-1 ml-0  relative top-20 min-h-[27px]">
     <nav class="navbar relative flex flex-wrap items-center justify-between ">
       <button class="navbar-toggle text-[15px] leading-1 bg-transparent border-2 border-transparent rounded-[3px]">
         <span class="toggle-icon"></span>
@@ -11,32 +12,37 @@
           <li class="nav-item active relative ">
             <div class="selectedSportsCategory absolute bg-black top-[25px] w-full h-0.5">
             </div>
-            <a href="/home" class="text-black uppercase text-[14px] inline-block relative overflow-hidden text-center py-[3px] px-[15px]">Home</a>
+            <a href="/home"
+              class="text-black uppercase text-[14px] inline-block relative overflow-hidden text-center py-[3px] px-[15px]">Home</a>
           </li>
           <li class="nav-item relative">
-            <div >
+            <div>
 
             </div>
-            <a href="/game-list/IN-PLAY" class="text-black uppercase text-[14px] inline-block relative overflow-hidden text-center py-[3px] px-[15px]">
+            <a href="/game-list/IN-PLAY"
+              class="text-black uppercase text-[14px] inline-block relative overflow-hidden text-center py-[3px] px-[15px]">
               In-Play</a>
           </li>
           <li class="nav-item relative">
-            <div >
+            <div>
             </div>
-            <a href="/game-list/Cricket/4" class="text-black uppercase text-[14px] inline-block relative overflow-hidden text-center py-[3px] px-[15px]"> 
+            <a href="/game-list/Cricket/4"
+              class="text-black uppercase text-[14px] inline-block relative overflow-hidden text-center py-[3px] px-[15px]">
               Cricket</a>
           </li>
           <li class="nav-item relative">
             <div>
 
             </div>
-            <a  href="/game-list/Soccer/1" class="text-black uppercase text-[14px] inline-block relative overflow-hidden text-center py-[3px] px-[15px]">
-               Soccer</a>
+            <a href="/game-list/Soccer/1"
+              class="text-black uppercase text-[14px] inline-block relative overflow-hidden text-center py-[3px] px-[15px]">
+              Soccer</a>
           </li>
           <li class="nav-item position-relative">
-            <div >
+            <div>
             </div>
-            <a  href="/game-list/Tennis/2" class="text-black uppercase text-[14px] inline-block relative overflow-hidden text-center py-[3px] px-[15px]"> 
+            <a href="/game-list/Tennis/2"
+              class="text-black uppercase text-[14px] inline-block relative overflow-hidden text-center py-[3px] px-[15px]">
               Tennis</a>
           </li>
         </ul>
@@ -50,29 +56,36 @@
 
 <div class="nav-mobile visible lg:hidden md:hidden ">
   <ul
-    class="nav nav-tabs game-nav-bar lg:hidden   bg-[linear-gradient(180deg,#030a12,#444647_42%,#58595a)] rounded-0 border-b-0 overflow-x-auto overflow-y-hidden relative flex-nowrap flex shadow  ">
+    class="nav nav-tabs game-nav-bar lg:hidden   bg-[linear-gradient(180deg,#030a12,#444647_42%,#58595a)] rounded-0 border-b-0 overflow-x-auto overflow-y-hidden relative flex-nowrap flex shadow">
     <li
-      class="nav-item activeNav grow flex justify-center shrink text-center border-t-2 border-r border-white pt-[11px] pb-[11px] mb-auto text-[12px] leading-[18px] text-white">
-      <a class="nav-link position-relative " id="10">
-        <div class="heartBeat bg-[gradient-to-t from-sky-500 to-indigo-500] animate-pulse blink-text">INPLAY </div>
+      class="nav-item activeNav grow flex justify-center shrink text-center  pt-[11px] pb-[11px] mb-auto text-[12px] leading-[18px] text-white w-[70.65px]"
+      (click)="setIndex(0)" 
+      [ngClass]="{'border-t-2  border-white ': activeIndex === 0 }">
+      <a class="nav-link relative  border-white border-r left-3.5 ">
+        <div class="heartBeat bg-[gradient-to-t from-sky-500 to-indigo-500] animate-pulse blink-text relative right-2 ">
+          INPLAY </div>
       </a>
     </li>
     <li
-      class="nav-item grow flex justify-center shrink text-center border-t-2 border-r mx-auto border-white pt-[11px] pb-[11px] mb-auto text-[12px] leading-[18px] text-white">
-      <a class="nav-link position-relative  pt-0 pb-0 rounded-0" id="11">
-        <div class="pl-4  border-white ">EXCHANGE </div>
+      class="nav-item grow flex justify-center shrink text-center mx-auto pt-[11px] pb-[11px] mb-auto text-[12px] leading-[18px] text-white  w-[89.27px]"
+       (click)="setIndex(1)" 
+      [ngClass]="{'border-t-2  border-white ': activeIndex === 1 }">
+      <a class="nav-link relative  pt-0 pb-0 rounded-0  border-white border-r left-3.5">
+        <div class=" w-[63.94px] relative right-2.5">EXCHANGE </div>
+      </a>
+    </li>
+    <li class="nav-item grow flex shrink text-center pt-[11px] pb-[11px] mb-auto text-[12px] text-white
+    pl-3 w-[96.82px]"  (click)="setIndex(2)" 
+      [ngClass]="{'border-t-2  border-white ': activeIndex === 2 }">
+      <a class="nav-link relative  border-white border-r left-3.5">
+        <div class="heartBeat animate-pulse  blink-text relative right-2 ">LIVE CASINO </div>
       </a>
     </li>
     <li
-      class="nav-item grow flex shrink text-center border-t-2 border-r border-white pt-[11px] pb-[11px] mb-auto text-[12px] text-white">
-      <a class="nav-link position-relative" id="16">
-        <div class="heartBeat animate-pulse pl-4  blink-text">LIVE CASINO </div>
-      </a>
-    </li>
-    <li
-      class="nav-item grow flex shrink text-center border-t-2 border-white pt-[11px] pb-[11px] mb-auto text-[12px] text-white">
-      <a class="nav-link position-relative " id="98">
-        <div class="pl-4 "> TIPS &amp; PREVIEWS </div>
+      class="nav-item w-[118.6px] h-[19.33] grow flex shrink text-center pt-[11px] pb-[11px] mb-auto  text-[12px] text-white pl-1"  (click)="setIndex(3)" 
+      [ngClass]="{'border-t-2  border-white ': activeIndex === 3 }">
+      <a class="nav-link relative ">
+        <div class=" w-[93.94px] "> TIPS &amp; PREVIEWS </div>
       </a>
     </li>
   </ul>
@@ -81,46 +94,42 @@
 <!-- next nav -->
 <div class="visible lg:hidden md:hidden">
   <ul
-    class="sportsListNav bg-[linear-gradient(180deg,#030a12,#444647_42%,#58595a)] mb-0 pl-0 flex overflow-x-scroll visible lg:invisible">
+    class="sportsListNav h-[54] bg-[linear-gradient(180deg,#030a12,#444647_42%,#58595a)] mb-0 pl-0 flex overflow-x-scroll visible lg:invisible">
     <li class="min-w-fit no-underline">
       <a>
-        <div
-          class="SportsNavItems relative SportsItemsActive flex flex-col text-[12px] pb-[3px] pt-[9px] pl-[9px] pr-[9px] text-white"
-          [ngClass]="{'bg-cricket-gradient': activeTab === 'cricket'}" (click)="setActive('cricket')">
-          <div>
-            <div class="sports-img">
-              <img src="ball.svg" class="sprite icon-cricket-white filter invert brightness-0 h-5 w-5 ">
+        <div class="SportsNavItems relative SportsItemsActive flex flex-col text-[12px] 
+            text-white" [ngClass]="{'bg-cricket-gradient': activeTab === 'cricket'}" (click)="setActive('cricket')">
+          <div class="h-[54px] w-[57.85px]">
+            <div class="sports-img m-[5px] relative left-3">
+              <img src="/ball.png" class="sprite icon-cricket-white filter invert brightness-0 h-5 w-5">
             </div>
-            <div class="sportsNAV-text ">Cricket</div>
+            <div class="sportsNAV-text text-center ">Cricket</div>
           </div>
         </div>
       </a>
     </li>
     <li>
       <a>
-        <div
-          class="SportsNavItems relative flex flex-col text-[12px] pb-[3px] pt-[9px] pl-[9px] pr-[9px] text-white"
+        <div class="SportsNavItems relative flex flex-col text-[12px] text-white"
           [ngClass]="{'bg-soccer-gradient': activeTab === 'soccer'}" (click)="setActive('soccer')">
-          <div>
-            <div class="sports-img">
-              <img src="sports_soccer_24dp_1F1F1F_FILL0_wght400_GRAD0_opsz24.svg"
-                class="sprite icon-soccer-white filter invert brightness-0 h-5 w-5">
+          <div class="h-[54px] w-[55.38px]">
+            <div class="sports-img m-[5px] relative left-3">
+              <img src="football.png" class="sprite icon-soccer-white filter invert brightness-0 h-5 w-5">
             </div>
-            <div class="sportsNAV-text">Soccer</div>
+            <div class="sportsNAV-text text-center ">Soccer</div>
           </div>
         </div>
       </a>
     </li>
     <li>
       <a>
-        <div
-          class="SportsNavItems position-relative flex flex-col text-[12px] pb-[3px] pt-[9px] pl-[9px] pr-[9px] text-white"
+        <div class="SportsNavItems position-relative flex flex-col text-[12px] text-white"
           [ngClass]="{'bg-tennis-gradient': activeTab === 'tennis'}" (click)="setActive('tennis')">
-          <div>
-            <div class="sports-img">
-              <img src="baseball.svg" class="sprite icon-tennis-white filter invert brightness-0 h-5 w-5 ">
+          <div class="h-[54px] w-[52.31px]">
+            <div class="sports-img m-[5px] relative left-3 w-[36.31px] align-middle">
+              <img src="tennis-ball.png" class="sprite icon-tennis-white filter invert brightness-0 h-5 w-5 ">
             </div>
-            <div class="sportsNAV-text">Tennis</div>
+            <div class="sportsNAV-text text-center ">Tennis</div>
           </div>
         </div>
       </a>
