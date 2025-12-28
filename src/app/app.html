@@ -1,12 +1,12 @@
-
-<div class="h-[calc(100vh-32px)]">
+<!-- [@media(min-width:820px)]:w-[calc(100vw-189px)]   -->
+<div class="[@media(min-width:992px)]:h-[calc(100vh-32px)]">
 <app-header></app-header>
 <app-navbar></app-navbar>
 <div class="middle-content w-full hidden sm:flex">
 <div class="side w-[189px] overflow-y-hidden hidden [@media(min-width:992px)]:flex">
 <app-sidebar></app-sidebar>
 </div>
-<div class="right flex  w-[calc(100vw-189px)]  [@media(min-width:820px)]:flex" >
+<div class="right flex [@media(min-width:820px)]:flex lg:pl-[100px] " >
 <app-right-content></app-right-content>
 </div>
 </div>
