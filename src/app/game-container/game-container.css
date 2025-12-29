@@ -1,7 +1,7 @@
 .blink-text {
   font-size: 12px;
-  font-weight: bold;
-  animation: blinkColor 1s infinite;
+  font-weight:400;
+  animation: blinkColor 2s infinite;
 }
 
 @keyframes blinkColor {

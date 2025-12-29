@@ -1,6 +1,6 @@
 .blink-text {
   font-size: 12px;
-  font-weight: bold;
+  font-weight: 400;
   animation: blinkColor 1s infinite;
 }
 
