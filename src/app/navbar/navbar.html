@@ -56,40 +56,55 @@
 
 <div class="nav-mobile visible lg:hidden md:hidden ">
   <ul
-    class="nav nav-tabs game-nav-bar lg:hidden   bg-[linear-gradient(180deg,#030a12,#444647_42%,#58595a)] rounded-0 border-b-0 overflow-x-auto overflow-y-hidden relative flex-nowrap flex shadow">
+    class="nav nav-tabs game-nav-bar lg:hidden bg-[linear-gradient(180deg,#030a12,#444647_42%,#58595a)] rounded-0 border-b-0 overflow-x-hidden overflow-y-hidden relative flex-nowrap flex shadow">
     <li
-      class="nav-item activeNav grow flex justify-center shrink text-center  pt-[11px] pb-[11px] mb-auto text-[12px] leading-[18px] text-white w-[70.65px] "
+      class="nav-item activeNav grow flex justify-center shrink text-center  pt-[9px] pb-[11px] mb-auto text-[12px] leading-[18px] text-white "
       (click)="setIndex(0)" 
       [ngClass]="{'border-t-2  border-white ': activeIndex === 0 }">
-      <a class="nav-link relative  border-white border-r left-4.5  ">
-        <div class="heartBeat bg-[gradient-to-t from-sky-500 to-indigo-500] animate-pulse blink-text relative right-2  ">
+      <a class="nav-link relative  border-white border-r  px-3 py-1">
+        <div class="heartBeat animate-pulse blink-text relative  text-center ">
           INPLAY </div>
       </a>
     </li>
     <li
-      class="nav-item grow flex justify-center shrink text-center mx-auto pt-[11px] pb-[11px] mb-auto text-[12px] leading-[18px] text-white  w-[89.27px]"
+      class="nav-item grow flex justify-center shrink text-center  pt-[11px] pb-[11px] mb-auto text-[12px] leading-[18px] text-white "
        (click)="setIndex(1)" 
       [ngClass]="{'border-t-2  border-white ': activeIndex === 1 }">
-      <a class="nav-link relative  pt-0 pb-0 rounded-0  border-white border-r left-5.5">
-        <div class=" w-[73.94px] relative right-4.5 bottom-0.5">EXCHANGE </div>
+      <a class="nav-link relative  rounded-0  border-white border-r  px-3 py-1">
+        <div class="relative text-center ">EXCHANGE </div>
       </a>
     </li>
     <li class="nav-item grow flex shrink text-center pt-[11px] pb-[11px] mb-auto text-[12px] text-white
-    pl-3 w-[96.82px]"  (click)="setIndex(2)" 
+    pl-3 "  (click)="setIndex(2)" 
       [ngClass]="{'border-t-2  border-white ': activeIndex === 2 }">
-      <a class="nav-link relative  border-white border-r left-3.5">
-        <div class="heartBeat animate-pulse  blink-text relative right-2 text-nowrap">LIVE CASINO </div>
+      <a class="nav-link relative  border-white border-r  px-3 py-1">
+        <div class="heartBeat animate-pulse  blink-text relative text-nowrap text-center">LIVE CASINO </div>
       </a>
     </li>
     <li
-      class="nav-item w-[118.6px] h-[19.33] grow flex shrink text-center pt-[11px] pb-[11px] mb-auto  text-[12px] text-white pl-1"  (click)="setIndex(3)" 
+      class="nav-item  h-[19.33] grow flex shrink text-center pt-[11px] pb-[11px] mb-auto  text-[12px] text-white pl-1"  (click)="setIndex(3)" 
       [ngClass]="{'border-t-2  border-white ': activeIndex === 3 }">
-      <a class="nav-link relative left-3.5">
-        <div class=" w-[93.94px] "> TIPS &amp; PREVIEWS </div>
+      <a class="nav-link relative  px-2 py-1">
+        <div class="text-nowrap"> TIPS &amp; PREVIEWS </div>
       </a>
     </li>
   </ul>
 </div>
+
+<!-- new mobile navbar -->
+ <!-- <div class="newnav nav-mobile visible lg:hidden md:hidden border-transparent">
+  <ul class="navs-tab bg-[linear-gradient(180deg,#030a12,#444647_42%,#58595a)] rounded-0 border-b-0 overflow-y-hidden flex-nowrap relative shadow">
+    <li class="nav-item flex shrink grow basis-auto text-center mb-0 pt-[11px] pb-[11px]">
+      <a href="#" class="nav-links border-r bg-white rounded pt-0 pb-0 block px-4 py-2">
+        <div class="heartbeat">INPLAY</div>
+      </a>
+
+    </li>
+
+  </ul>
+   
+ </div> -->
+
 
 <!-- next nav -->
 <div class="visible lg:hidden md:hidden">
