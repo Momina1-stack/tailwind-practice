@@ -1,7 +1,7 @@
 <div>
   <div class="app-casino">
-    <div class=" mx-0 w-full ">
-      <div class="md2 relative ">
+    <div class="container-fluid mx-0 w-full ">
+      <div class="md2 relative">
         <ul
           class="navSports flex mb-3 h-8 overflow-x-auto bg-[linear-gradient(180deg,#030a12,#444647_42%,#58595a)] shadow-[0_8px_8px_-7px_#000] lg:hidden md:hidden">
           <li
@@ -59,25 +59,18 @@
             [ngClass]="{'bg-active-gradient': activeNav === 'Virtual'}" (click)="setActiveNav('Virtual')">
             <a href="javascript:void(0)">Virtual</a>
         </ul>
-    
+        <!-- cards -->
+        <!-- cards -->
+        <div class="grid grid-cols-3 md:grid-cols-4 xl:grid-cols-6 gap-[6px] px-[4px] block lg:hidden">
 
-
-
-
-<!-- cards -->
-    <div class="grid grid-cols-3 md:grid-cols-4 xl:grid-cols-6 gap-[6px] px-[4px]">
-      
-<div
-  role="button"
-  tabindex="0"
-  class="
+          <div role="button" tabindex="0" class="
     cursor-pointer
     overflow-hidden
     rounded-[6px]
     shadow-[0_5px_9px_-3px_rgba(0,0,0,0.6)]
     mb-[15px]
 
-    min-h-[160px]
+    min-h-[175px]
     md:min-h-[260px]
 
     max-w-[98.74%]
@@ -86,40 +79,15 @@
     bg-no-repeat
     bg-[length:100%_108%]
     bg-[position:center_0px]
-  "
-  style="background-image:url('')">
-</div>
-<div
-  role="button"
-  tabindex="0"
-  class="
+  " style="background-image:url('')">
+          </div>
+          <div role="button" tabindex="0" class="
     cursor-pointer
     overflow-hidden
     rounded-[6px]
     shadow-[0_5px_9px_-3px_rgba(0,0,0,0.6)]
     mb-[15px]
 
-     min-h-[175px]
-    md:min-h-[260px]
-
-    max-w-[98.74%]
-    md:max-w-[99.77%]
-
-    bg-no-repeat
-    bg-[length:100%_108%]
-    bg-[position:center_0px]
-  "
-  style="background-image:url('https://dayfair.net/api/users/images/Lucky-7.webp')">
-</div>
-<div
-  role="button"
-  tabindex="0"
-  class="
-    cursor-pointer
-    overflow-hidden
-    rounded-[6px]
-    shadow-[0_5px_9px_-3px_rgba(0,0,0,0.6)]
-    mb-[15px]
    min-h-[175px]
     md:min-h-[260px]
 
@@ -129,20 +97,16 @@
     bg-no-repeat
     bg-[length:100%_108%]
     bg-[position:center_0px]
-  "
-  style="background-image:url('Dragontiger.jpg')">
-</div>
-<div
-  role="button"
-  tabindex="0"
-  class="
+  " style="background-image:url('https://dayfair.net/api/users/images/Lucky-7.webp')">
+          </div>
+          <div role="button" tabindex="0" class="
     cursor-pointer
     overflow-hidden
     rounded-[6px]
     shadow-[0_5px_9px_-3px_rgba(0,0,0,0.6)]
     mb-[15px]
 
-      min-h-[175px]
+ min-h-[175px]
     md:min-h-[260px]
 
     max-w-[98.74%]
@@ -151,40 +115,15 @@
     bg-no-repeat
     bg-[length:100%_108%]
     bg-[position:center_0px]
-  ">
-</div>
-<div
-  role="button"
-  tabindex="0"
-  class="
+  " style="background-image:url('Dragontiger.jpg')">
+          </div>
+          <div role="button" tabindex="0" class="
     cursor-pointer
     overflow-hidden
     rounded-[6px]
     shadow-[0_5px_9px_-3px_rgba(0,0,0,0.6)]
     mb-[15px]
-
-     min-h-[175px]
-    md:min-h-[260px]
-    max-w-[98.74%]
-    md:max-w-[99.77%]
-
-    bg-no-repeat
-    bg-[length:100%_108%]
-    bg-[position:center_0px]
-  "
-  style="background-image:url('Baccarat.jpg')">
-</div>
-<div
-  role="button"
-  tabindex="0"
-  class="
-    cursor-pointer
-    overflow-hidden
-    rounded-[6px]
-    shadow-[0_5px_9px_-3px_rgba(0,0,0,0.6)]
-    mb-[15px]
-
-      min-h-[175px]
+ min-h-[175px]
     md:min-h-[260px]
 
     max-w-[98.74%]
@@ -193,21 +132,16 @@
     bg-no-repeat
     bg-[length:100%_108%]
     bg-[position:center_0px]
-  "
-  style="background-image:url('')">
-</div>
-<!-- 7th card -->
- <div
-  role="button"
-  tabindex="0"
-  class="
+  " style="background-image:url('')">
+          </div>
+          <div role="button" tabindex="0" class="
     cursor-pointer
     overflow-hidden
     rounded-[6px]
     shadow-[0_5px_9px_-3px_rgba(0,0,0,0.6)]
     mb-[15px]
 
-      min-h-[175px]
+    min-h-[175px]
     md:min-h-[260px]
 
     max-w-[98.74%]
@@ -216,21 +150,16 @@
     bg-no-repeat
     bg-[length:100%_108%]
     bg-[position:center_0px]
-  "
-  style="background-image:url('Poker.jpg')">
-</div>
-<!-- 8th -->
- <div
-  role="button"
-  tabindex="0"
-  class="
+  " style="background-image:url('Baccarat.jpg')">
+          </div>
+          <div role="button" tabindex="0" class="
     cursor-pointer
     overflow-hidden
     rounded-[6px]
     shadow-[0_5px_9px_-3px_rgba(0,0,0,0.6)]
     mb-[15px]
 
-      min-h-[175px]
+    min-h-[175px]
     md:min-h-[260px]
 
     max-w-[98.74%]
@@ -239,20 +168,16 @@
     bg-no-repeat
     bg-[length:100%_108%]
     bg-[position:center_0px]
-  "
-  style="background-image:url('')">
-</div>
-<div
-  role="button"
-  tabindex="0"
-  class="
+  " style="background-image:url('')">
+          </div>
+          <div role="button" tabindex="0" class="
     cursor-pointer
     overflow-hidden
     rounded-[6px]
     shadow-[0_5px_9px_-3px_rgba(0,0,0,0.6)]
     mb-[15px]
 
-      min-h-[175px]
+    min-h-[175px]
     md:min-h-[260px]
 
     max-w-[98.74%]
@@ -261,19 +186,16 @@
     bg-no-repeat
     bg-[length:100%_108%]
     bg-[position:center_0px]
-  "
-  style="background-image:url('gaming-2-min.png')">
-</div><div
-  role="button"
-  tabindex="0"
-  class="
+  " style="background-image:url('Poker.jpg')">
+          </div>
+          <div role="button" tabindex="0" class="
     cursor-pointer
     overflow-hidden
     rounded-[6px]
     shadow-[0_5px_9px_-3px_rgba(0,0,0,0.6)]
     mb-[15px]
 
-      min-h-[175px]
+    min-h-[175px]
     md:min-h-[260px]
 
     max-w-[98.74%]
@@ -282,19 +204,16 @@
     bg-no-repeat
     bg-[length:100%_108%]
     bg-[position:center_0px]
-  "
-  style="background-image:url('')">
-</div><div
-  role="button"
-  tabindex="0"
-  class="
+  " style="background-image:url('')">
+          </div>
+          <div role="button" tabindex="0" class="
     cursor-pointer
     overflow-hidden
     rounded-[6px]
     shadow-[0_5px_9px_-3px_rgba(0,0,0,0.6)]
     mb-[15px]
 
-      min-h-[175px]
+    min-h-[175px]
     md:min-h-[260px]
 
     max-w-[98.74%]
@@ -303,19 +222,16 @@
     bg-no-repeat
     bg-[length:100%_108%]
     bg-[position:center_0px]
-  "
-  style="background-image:url('CardRace.jpg')">
-</div><div
-  role="button"
-  tabindex="0"
-  class="
+  " style="background-image:url('gaming-2-min.png')">
+          </div>
+          <div role="button" tabindex="0" class="
     cursor-pointer
     overflow-hidden
     rounded-[6px]
     shadow-[0_5px_9px_-3px_rgba(0,0,0,0.6)]
     mb-[15px]
 
-      min-h-[175px]
+    min-h-[175px]
     md:min-h-[260px]
 
     max-w-[98.74%]
@@ -324,19 +240,16 @@
     bg-no-repeat
     bg-[length:100%_108%]
     bg-[position:center_0px]
-  "
-  style="background-image:url('Vimaan1.jpg')">
-</div><div
-  role="button"
-  tabindex="0"
-  class="
+  " style="background-image:url('')">
+          </div>
+          <div role="button" tabindex="0" class="
     cursor-pointer
     overflow-hidden
     rounded-[6px]
     shadow-[0_5px_9px_-3px_rgba(0,0,0,0.6)]
     mb-[15px]
 
-      min-h-[175px]
+    min-h-[175px]
     md:min-h-[260px]
 
     max-w-[98.74%]
@@ -345,19 +258,16 @@
     bg-no-repeat
     bg-[length:100%_108%]
     bg-[position:center_0px]
-  "
-  style="background-image:url('Balloon.jpg')">
-</div><div
-  role="button"
-  tabindex="0"
-  class="
+  " style="background-image:url('CardRace.jpg')">
+          </div>
+          <div role="button" tabindex="0" class="
     cursor-pointer
     overflow-hidden
     rounded-[6px]
     shadow-[0_5px_9px_-3px_rgba(0,0,0,0.6)]
     mb-[15px]
 
-      min-h-[175px]
+    min-h-[175px]
     md:min-h-[260px]
 
     max-w-[98.74%]
@@ -366,19 +276,16 @@
     bg-no-repeat
     bg-[length:100%_108%]
     bg-[position:center_0px]
-  "
-  style="background-image:url('abevolution+gaming-min.png')">
-</div><div
-  role="button"
-  tabindex="0"
-  class="
+  " style="background-image:url('Vimaan1.jpg')">
+          </div>
+          <div role="button" tabindex="0" class="
     cursor-pointer
     overflow-hidden
     rounded-[6px]
     shadow-[0_5px_9px_-3px_rgba(0,0,0,0.6)]
     mb-[15px]
 
-      min-h-[175px]
+    min-h-[175px]
     md:min-h-[260px]
 
     max-w-[98.74%]
@@ -387,19 +294,16 @@
     bg-no-repeat
     bg-[length:100%_108%]
     bg-[position:center_0px]
-  "
-  style="background-image:url('')">
-</div><div
-  role="button"
-  tabindex="0"
-  class="
+  " style="background-image:url('Balloon.jpg')">
+          </div>
+          <div role="button" tabindex="0" class="
     cursor-pointer
     overflow-hidden
     rounded-[6px]
     shadow-[0_5px_9px_-3px_rgba(0,0,0,0.6)]
     mb-[15px]
 
-      min-h-[175px]
+    min-h-[175px]
     md:min-h-[260px]
 
     max-w-[98.74%]
@@ -408,19 +312,16 @@
     bg-no-repeat
     bg-[length:100%_108%]
     bg-[position:center_0px]
-  "
-  style="background-image:url('')">
-</div><div
-  role="button"
-  tabindex="0"
-  class="
+  " style="background-image:url('abevolution+gaming-min.png')">
+          </div>
+          <div role="button" tabindex="0" class="
     cursor-pointer
     overflow-hidden
     rounded-[6px]
     shadow-[0_5px_9px_-3px_rgba(0,0,0,0.6)]
     mb-[15px]
 
-      min-h-[175px]
+    min-h-[175px]
     md:min-h-[260px]
 
     max-w-[98.74%]
@@ -429,19 +330,16 @@
     bg-no-repeat
     bg-[length:100%_108%]
     bg-[position:center_0px]
-  "
-  style="background-image:url('')">
-</div><div
-  role="button"
-  tabindex="0"
-  class="
+  " style="background-image:url('')">
+          </div>
+          <div role="button" tabindex="0" class="
     cursor-pointer
     overflow-hidden
     rounded-[6px]
     shadow-[0_5px_9px_-3px_rgba(0,0,0,0.6)]
     mb-[15px]
 
-      min-h-[175px]
+    min-h-[175px]
     md:min-h-[260px]
 
     max-w-[98.74%]
@@ -450,19 +348,52 @@
     bg-no-repeat
     bg-[length:100%_108%]
     bg-[position:center_0px]
-  "
-  style="background-image:url('gaming-2-min.png')">
-</div><div
-  role="button"
-  tabindex="0"
-  class="
+  " style="background-image:url('')">
+          </div>
+          <div role="button" tabindex="0" class="
+    cursor-pointer
+    overflow-hidden
+    rounded-[6px]
+    shadow-[0_5px_9px_-3px_rgba(0,0,0,0.6)]
+    mb-[15px]
+
+    min-h-[175px]
+    md:min-h-[260px]
+
+    max-w-[98.74%]
+    md:max-w-[99.77%]
+
+    bg-no-repeat
+    bg-[length:100%_108%]
+    bg-[position:center_0px]
+  " style="background-image:url('')">
+          </div>
+          <div role="button" tabindex="0" class="
+    cursor-pointer
+    overflow-hidden
+    rounded-[6px]
+    shadow-[0_5px_9px_-3px_rgba(0,0,0,0.6)]
+    mb-[15px]
+
+    min-h-[175px]
+    md:min-h-[260px]
+
+    max-w-[98.74%]
+    md:max-w-[99.77%]
+
+    bg-no-repeat
+    bg-[length:100%_108%]
+    bg-[position:center_0px]
+  " style="background-image:url('gaming-2-min.png')">
+          </div>
+          <div role="button" tabindex="0" class="
     cursor-pointer
     overflow-hidden
     rounded-[6px]
     shadow-[0_5px_9px_-3px_rgba(0,0,0,0.6)]
     mb-[45px]
 
-      min-h-[175px]
+    min-h-[175px]
     md:min-h-[260px]
 
     max-w-[98.74%]
@@ -471,9 +402,6 @@
     bg-no-repeat
     bg-[length:100%_108%]
     bg-[position:center_0px]
-  "
-  style="background-image:url('gaming-3-min.png')">
-</div>
-</div>
-
-    
+  " style="background-image:url('gaming-3-min.png')">
+          </div>
+        </div>

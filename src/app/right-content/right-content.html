@@ -1432,7 +1432,7 @@
 <!-- popular nav -->
 <div>
   <div class="app-casino">
-    <div class="container-fluid mx-0 pr-[9px] pl-4  mt-30 relative [@media(min-width:992px)]:top-30">
+    <div class=" mx-0 pr-[9px] pl-4  mt-30 relative [@media(min-width:992px)]:top-30">
       <div class="md2 relative w-full">
         <ul
           class="navSports mb-3 h-8 overflow-x-auto bg-[linear-gradient(180deg,#030a12,#444647_42%,#58595a)] shadow-[0_8px_8px_-7px_#000] w-full hidden sm:flex ">
@@ -1491,147 +1491,360 @@
             [ngClass]="{'bg-active-gradient': activeNav === 'Virtual'}" (click)="setActiveNav('Virtual')">
             <a href="javascript:void(0)">Virtual</a>
         </ul>
+
         <!-- cards -->
-        <div class="container-fluid  mx-0  m-0 p-[3px] overflow-hidden hidden sm:flex pl-[3px] max-w-full">
-          <div class="rows flex flex-wrap  ml-1.5 mr-1.5 mt-1 mb-12">
-            <!-- 1st -->
-            <div
-              class="card1 basis-auto grow-0 shrink-0 h-60 mt-0 max-w-full pl-1 pr-[4.8px] text-center shadow-xl md:w-[25%]
-              lg:w-[16.66%]">
-              <div class="casinoicons-custom shadow-[0_5px_9px_-3px_rgb(33,37,41)] rounded-lg mb-[15px] relative ">
-                <img src="abevolution+gaming-min.png" alt="" class=" h-60 w-full ">
-              </div>
-            </div>
-            <!-- 2nd-->
-            <div
-              class="card1 basis-auto grow-0 shrink-0 h-60 mt-0 max-w-full pl-1 pr-[4.8px] text-center  shadow-xl md:w-[25%] lg:w-[16.66%]">
-              <div class="casinoicons-custom shadow-[0_5px_9px_-3px_rgb(33,37,41)] rounded-lg mb-[15px] relative">
-                <img src="Lucky-7.jpg" alt="" class=" h-60 w-full">
-              </div>
-            </div>
-            <!-- 3rd -->
-            <div
-              class="card1 basis-auto grow-0 shrink-0 h-60 mt-0 max-w-full pl-1 pr-[4.8px] text-center  shadow-xl md:w-[25%]
-              lg:w-[16.66%]">
-              <div class="casinoicons-custom shadow-[0_5px_9px_-3px_rgb(33,37,41)] rounded-lg   mb-[15px] relative">
-                <img src="Dragontiger.jpg" alt="" class=" h-60 w-full">
-              </div>
-            </div>
-            <!-- 4th -->
-            <div
-              class="card1 basis-auto grow-0 shrink-0 h-60 mt-0 max-w-full pl-1 pr-[4.8px] text-center  shadow-xl md:w-[25%] lg:w-[16.66%] ">
-              <div class="casinoicons-custom shadow-[0_5px_9px_-3px_rgb(33,37,41)] rounded-lg   mb-[15px] relative w-full h-60">
-              </div>
-            </div>
-            <!-- 5th -->
-            <div
-              class="card1 basis-auto grow-0 shrink-0 h-60 mt-0 max-w-full pl-1 pr-[4.8px] text-center shadow-xl md:w-[25%] lg:w-[16.66%]  ">
-              <div class="casinoicons-custom shadow-[0_5px_9px_-3px_rgb(33,37,41)] rounded-lg mb-[15px] relative ">
-                <img src="Baccarat.jpg" alt="" class=" h-60 w-full">
-              </div>
-            </div>
-            <!-- 6th -->
-            <div
-              class="card1 basis-auto grow-0 shrink-0 h-60 mt-0 max-w-full pl-1 pr-[4.8px] text-center  shadow-xl md:w-[25%]
-             lg:w-[16.66%] ">
-              <div class="casinoicons-custom shadow-[0_5px_9px_-3px_rgb(33,37,41)] rounded-lg mb-[15px] relative pt-1 
-              w-full h-60">
-              </div>
-            </div>
-            <!-- 7th -->
-            <div
-              class="card1 basis-auto grow-0 shrink-0 h-60 mt-0 max-w-full pl-1 pr-[4.8px] text-center  shadow-xl md:w-[25%]
-              lg:w-[16.66%] ">
-              <div class="casinoicons-custom shadow-[0_5px_9px_-3px_rgb(33,37,41)]  rounded-lg mb-[15px] relative pt-1">
-                <img src="Poker.jpg" alt="" class="h-60 w-full">
-              </div>
-            </div>
-            <!-- 8th -->
-            <div
-              class="card1 basis-auto grow-0 shrink-0 h-60 mt-0 max-w-full pl-1 pr-[4.8px] text-center shadow-xl md:w-[25%] 
-              lg:w-[16.66%]  ">
-              <div class="casinoicons-custom shadow-[0_5px_9px_-3px_rgb(33,37,41)] rounded-lg   mb-[15px] relative pt-1 w-full h-60">
-              </div>
-            </div>
-            <!-- 9th -->
-            <div
-              class="card1 basis-auto grow-0 shrink-0 h-60 mt-0 max-w-full pl-1 pr-[4.8px] text-center  shadow-xl md: w-[25%] 
-              lg:w-[16.66%]">
-              <div class="casinoicons-custom shadow-[0_5px_9px_-3px_rgb(33,37,41)]rounded-lg   mb-[15px] relative pt-1">
-                <img src="CardRace.jpg" alt="" class="h-60 w-full">
+         <div class="grid grid-cols-3 md:grid-cols-4 xl:grid-cols-6 gap-[6px] px-[4px] block s">
 
-              </div>
-            </div>
-            <!-- 10th -->
-            <div
-              class="card1 basis-auto grow-0 shrink-0 h-60 mt-0 max-w-full pl-1 pr-[4.8px] text-center shadow-xl  md:w-[25%]
-              lg:w-[16.66%] ">
-              <div class="casinoicons-custom  shadow-[0_5px_9px_-3px_rgb(33,37,41)] rounded-lg   mb-[15px] relative pt-1 w-full h-60">
-              </div>
-            </div>
-            <!-- 11th -->
-            <div
-              class="card1 basis-auto grow-0 shrink-0 h-60 mt-0 max-w-full pl-1 pr-[4.8px] text-center shadow-xl md:w-[25%]
-              lg:w-[16.66%] ">
-              <div class="casinoicons-custom shadow-[0_5px_9px_-3px_rgb(33,37,41)] rounded-lg   mb-[15px] relative pt-1 w-full h-60">
-              </div>
-            </div>
-            <!-- 12th -->
-            <div
-              class="card1 basis-auto grow-0 shrink-0 h-60 mt-0 max-w-full pl-1 pr-[4.8px] text-center  shadow-xl md:w-[25%] 
-              lg:w-[16.66%]">
-              <div class="casinoicons-custom shadow-[0_5px_9px_-3px_rgb(33,37,41)]  rounded-lg   mb-[15px] relative pt-1">
-                <img src="Vimaan1.jpg" alt="" class="h-60 w-full">
-              </div>
-            </div>
-            <!-- 13th -->
-            <div
-              class="card1 basis-auto grow-0 shrink-0 h-60 mt-0 max-w-full pl-1 pr-[4.8px] text-center shadow-xl md:w-[25%] 
-              lg:w-[16.66%] ">
-              <div class="casinoicons-custom shadow-[0_5px_9px_-3px_rgb(33,37,41)] rounded-lg   mb-[15px] relative pt-1">
-                <img src="Balloon.jpg" alt="" class="h-60 w-full">
-              </div>
-            </div>
-            <!-- 14 -->
-            <div
-              class="card1 basis-auto grow-0 shrink-0 h-60 mt-0 max-w-full pl-1 pr-[4.8px] text-center  shadow-xl md: w-[25%] lg:w-[16.66%] ">
-              <div class="casinoicons-custom shadow-[0_5px_9px_-3px_rgb(33,37,41)]  rounded-lg   mb-[15px] relative pt-1">
-                <img src="abevolution+gaming-min.png" alt="" class="h-60 w-full">
-              </div>
-            </div>
-            <!-- 15th -->
-            <div
-              class="card1 basis-auto grow-0 shrink-0 h-60 mt-0 max-w-full pl-1 pr-[4.8px] text-center  shadow-xl md:w-[25%] lg:w-[16.66%] ">
-              <div class="casinoicons-custom shadow-[0_5px_9px_-3px_rgb(33,37,41)]  rounded-lg   mb-[15px] relative pt-1 w-full h-60 ">
-              </div>
-            </div>
-            <!-- 16th-->
-            <div
-              class="card1 basis-auto grow-0 shrink-0 h-60 mt-0 max-w-full pl-1 pr-[4.8px] text-center  shadow-xl md:w-[25%] lg:w-[16.66%]">
-              <div class="casinoicons-custom shadow-[0_5px_9px_-3px_rgb(33,37,41)] rounded-lg mb-[15px] relative pt-1 w-full h-60">
-              </div>
-            </div>
-            <!-- 17th-->
-            <div
-              class="card1 basis-auto grow-0 shrink-0 h-60 mt-0 max-w-full pl-1 pr-[4.8px] text-center  shadow-xl md:w-[25%] lg:w-[16.66%]">
-              <div class="casinoicons-custom shadow-[0_5px_9px_-3px_rgb(33,37,41)] rounded-lg mb-[15px] relative pt-1 w-full h-60">
-              </div>
-            </div>
-            <!-- 18th -->
-            <div
-              class="card1 basis-auto grow-0 shrink-0 h-60 mt-0 max-w-full pl-1 pr-[4.8px] text-center shadow-xl md:w-[25%] 
-              lg:w-[16.66%] ">
-              <div class="casinoicons-custom shadow-[0_5px_9px_-3px_rgb(33,37,41)] rounded-lg   mb-[15px] relative pt-1 ">
-                <img src="gaming-2-min.png" alt="" class="h-60 w-full">
-              </div>
-            </div>
-            <!-- 19th -->
-            <div
-              class="card1 basis-auto grow-0 shrink-0 h-60 mt-0 max-w-full pl-1 pr-[4.8px] text-center  shadow-xl md:w-[25%] lg:w-[16.66%]  ">
-              <div class="casinoicons-custom shadow-[0_5px_9px_-3px_rgb(33,37,41)]  rounded-lg   mb-[15px] relative pt-1">
-                <img src="gaming-3-min.png" alt="" class="h-60 w-full">
-              </div>
-            </div>
+          <div role="button" tabindex="0" class="
+    cursor-pointer
+    overflow-hidden
+    rounded-[6px]
+    shadow-[0_5px_9px_-3px_rgba(0,0,0,0.6)]
+    mb-[15px]
 
+    min-h-[175px]
+    md:min-h-[260px]
+
+    max-w-[98.74%]
+    md:max-w-[99.77%]
+
+    bg-no-repeat
+    bg-[length:100%_108%]
+    bg-[position:center_0px]
+  " style="background-image:url('')">
+          </div>
+          <div role="button" tabindex="0" class="
+    cursor-pointer
+    overflow-hidden
+    rounded-[6px]
+    shadow-[0_5px_9px_-3px_rgba(0,0,0,0.6)]
+    mb-[15px]
+
+   min-h-[175px]
+    md:min-h-[260px]
+
+    max-w-[98.74%]
+    md:max-w-[99.77%]
+
+    bg-no-repeat
+    bg-[length:100%_108%]
+    bg-[position:center_0px]
+  " style="background-image:url('https://dayfair.net/api/users/images/Lucky-7.webp')">
+          </div>
+          <div role="button" tabindex="0" class="
+    cursor-pointer
+    overflow-hidden
+    rounded-[6px]
+    shadow-[0_5px_9px_-3px_rgba(0,0,0,0.6)]
+    mb-[15px]
+
+ min-h-[175px]
+    md:min-h-[260px]
+
+    max-w-[98.74%]
+    md:max-w-[99.77%]
+
+    bg-no-repeat
+    bg-[length:100%_108%]
+    bg-[position:center_0px]
+  " style="background-image:url('Dragontiger.jpg')">
+          </div>
+          <div role="button" tabindex="0" class="
+    cursor-pointer
+    overflow-hidden
+    rounded-[6px]
+    shadow-[0_5px_9px_-3px_rgba(0,0,0,0.6)]
+    mb-[15px]
+ min-h-[175px]
+    md:min-h-[260px]
+
+    max-w-[98.74%]
+    md:max-w-[99.77%]
+
+    bg-no-repeat
+    bg-[length:100%_108%]
+    bg-[position:center_0px]
+  " style="background-image:url('')">
+          </div>
+          <div role="button" tabindex="0" class="
+    cursor-pointer
+    overflow-hidden
+    rounded-[6px]
+    shadow-[0_5px_9px_-3px_rgba(0,0,0,0.6)]
+    mb-[15px]
+
+    min-h-[175px]
+    md:min-h-[260px]
+
+    max-w-[98.74%]
+    md:max-w-[99.77%]
+
+    bg-no-repeat
+    bg-[length:100%_108%]
+    bg-[position:center_0px]
+  " style="background-image:url('Baccarat.jpg')">
+          </div>
+          <div role="button" tabindex="0" class="
+    cursor-pointer
+    overflow-hidden
+    rounded-[6px]
+    shadow-[0_5px_9px_-3px_rgba(0,0,0,0.6)]
+    mb-[15px]
+
+    min-h-[175px]
+    md:min-h-[260px]
+
+    max-w-[98.74%]
+    md:max-w-[99.77%]
+
+    bg-no-repeat
+    bg-[length:100%_108%]
+    bg-[position:center_0px]
+  " style="background-image:url('')">
+          </div>
+          <div role="button" tabindex="0" class="
+    cursor-pointer
+    overflow-hidden
+    rounded-[6px]
+    shadow-[0_5px_9px_-3px_rgba(0,0,0,0.6)]
+    mb-[15px]
+
+    min-h-[175px]
+    md:min-h-[260px]
+
+    max-w-[98.74%]
+    md:max-w-[99.77%]
+
+    bg-no-repeat
+    bg-[length:100%_108%]
+    bg-[position:center_0px]
+  " style="background-image:url('Poker.jpg')">
+          </div>
+          <div role="button" tabindex="0" class="
+    cursor-pointer
+    overflow-hidden
+    rounded-[6px]
+    shadow-[0_5px_9px_-3px_rgba(0,0,0,0.6)]
+    mb-[15px]
+
+    min-h-[175px]
+    md:min-h-[260px]
+
+    max-w-[98.74%]
+    md:max-w-[99.77%]
+
+    bg-no-repeat
+    bg-[length:100%_108%]
+    bg-[position:center_0px]
+  " style="background-image:url('')">
+          </div>
+          <div role="button" tabindex="0" class="
+    cursor-pointer
+    overflow-hidden
+    rounded-[6px]
+    shadow-[0_5px_9px_-3px_rgba(0,0,0,0.6)]
+    mb-[15px]
+
+    min-h-[175px]
+    md:min-h-[260px]
+
+    max-w-[98.74%]
+    md:max-w-[99.77%]
+
+    bg-no-repeat
+    bg-[length:100%_108%]
+    bg-[position:center_0px]
+  " style="background-image:url('gaming-2-min.png')">
+          </div>
+          <div role="button" tabindex="0" class="
+    cursor-pointer
+    overflow-hidden
+    rounded-[6px]
+    shadow-[0_5px_9px_-3px_rgba(0,0,0,0.6)]
+    mb-[15px]
+
+    min-h-[175px]
+    md:min-h-[260px]
+
+    max-w-[98.74%]
+    md:max-w-[99.77%]
+
+    bg-no-repeat
+    bg-[length:100%_108%]
+    bg-[position:center_0px]
+  " style="background-image:url('')">
+          </div>
+          <div role="button" tabindex="0" class="
+    cursor-pointer
+    overflow-hidden
+    rounded-[6px]
+    shadow-[0_5px_9px_-3px_rgba(0,0,0,0.6)]
+    mb-[15px]
+
+    min-h-[175px]
+    md:min-h-[260px]
+
+    max-w-[98.74%]
+    md:max-w-[99.77%]
+
+    bg-no-repeat
+    bg-[length:100%_108%]
+    bg-[position:center_0px]
+  " style="background-image:url('CardRace.jpg')">
+          </div>
+          <div role="button" tabindex="0" class="
+    cursor-pointer
+    overflow-hidden
+    rounded-[6px]
+    shadow-[0_5px_9px_-3px_rgba(0,0,0,0.6)]
+    mb-[15px]
+
+    min-h-[175px]
+    md:min-h-[260px]
+
+    max-w-[98.74%]
+    md:max-w-[99.77%]
+
+    bg-no-repeat
+    bg-[length:100%_108%]
+    bg-[position:center_0px]
+  " style="background-image:url('Vimaan1.jpg')">
+          </div>
+          <div role="button" tabindex="0" class="
+    cursor-pointer
+    overflow-hidden
+    rounded-[6px]
+    shadow-[0_5px_9px_-3px_rgba(0,0,0,0.6)]
+    mb-[15px]
+
+    min-h-[175px]
+    md:min-h-[260px]
+
+    max-w-[98.74%]
+    md:max-w-[99.77%]
+
+    bg-no-repeat
+    bg-[length:100%_108%]
+    bg-[position:center_0px]
+  " style="background-image:url('Balloon.jpg')">
+          </div>
+          <div role="button" tabindex="0" class="
+    cursor-pointer
+    overflow-hidden
+    rounded-[6px]
+    shadow-[0_5px_9px_-3px_rgba(0,0,0,0.6)]
+    mb-[15px]
+
+    min-h-[175px]
+    md:min-h-[260px]
+
+    max-w-[98.74%]
+    md:max-w-[99.77%]
+
+    bg-no-repeat
+    bg-[length:100%_108%]
+    bg-[position:center_0px]
+  " style="background-image:url('abevolution+gaming-min.png')">
+          </div>
+          <div role="button" tabindex="0" class="
+    cursor-pointer
+    overflow-hidden
+    rounded-[6px]
+    shadow-[0_5px_9px_-3px_rgba(0,0,0,0.6)]
+    mb-[15px]
+
+    min-h-[175px]
+    md:min-h-[260px]
+
+    max-w-[98.74%]
+    md:max-w-[99.77%]
+
+    bg-no-repeat
+    bg-[length:100%_108%]
+    bg-[position:center_0px]
+  " style="background-image:url('')">
+          </div>
+          <div role="button" tabindex="0" class="
+    cursor-pointer
+    overflow-hidden
+    rounded-[6px]
+    shadow-[0_5px_9px_-3px_rgba(0,0,0,0.6)]
+    mb-[15px]
+
+    min-h-[175px]
+    md:min-h-[260px]
+
+    max-w-[98.74%]
+    md:max-w-[99.77%]
+
+    bg-no-repeat
+    bg-[length:100%_108%]
+    bg-[position:center_0px]
+  " style="background-image:url('')">
+          </div>
+          <div role="button" tabindex="0" class="
+    cursor-pointer
+    overflow-hidden
+    rounded-[6px]
+    shadow-[0_5px_9px_-3px_rgba(0,0,0,0.6)]
+    mb-[15px]
+
+    min-h-[175px]
+    md:min-h-[260px]
+
+    max-w-[98.74%]
+    md:max-w-[99.77%]
+
+    bg-no-repeat
+    bg-[length:100%_108%]
+    bg-[position:center_0px]
+  " style="background-image:url('')">
+          </div>
+          <div role="button" tabindex="0" class="
+    cursor-pointer
+    overflow-hidden
+    rounded-[6px]
+    shadow-[0_5px_9px_-3px_rgba(0,0,0,0.6)]
+    mb-[15px]
+
+    min-h-[175px]
+    md:min-h-[260px]
+
+    max-w-[98.74%]
+    md:max-w-[99.77%]
+
+    bg-no-repeat
+    bg-[length:100%_108%]
+    bg-[position:center_0px]
+  " style="background-image:url('gaming-2-min.png')">
+          </div>
+          <div role="button" tabindex="0" class="
+    cursor-pointer
+    overflow-hidden
+    rounded-[6px]
+    shadow-[0_5px_9px_-3px_rgba(0,0,0,0.6)]
+    mb-[45px]
+
+    min-h-[175px]
+    md:min-h-[260px]
+
+    max-w-[98.74%]
+    md:max-w-[99.77%]
+
+    bg-no-repeat
+    bg-[length:100%_108%]
+    bg-[position:center_0px]
+  " style="background-image:url('gaming-3-min.png')">
           </div>
         </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+      
+
+
+
+
+        
