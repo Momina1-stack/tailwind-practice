@@ -1,5 +1,5 @@
 import { Component, signal } from '@angular/core';
-import { RouterOutlet } from '@angular/router';
+import { RouterLink, RouterOutlet } from '@angular/router';
 import { Header } from './header/header';
 import { Navbar } from './navbar/navbar';
 import { Sidebar } from './sidebar/sidebar';
@@ -11,7 +11,7 @@ import { RightContent } from './right-content/right-content';
 
 @Component({
   selector: 'app-root',
-  imports: [Header,Navbar,Sidebar,RightContent,GameContainer,AppCasino,Footer],
+  imports: [ RouterOutlet],
   templateUrl: './app.html',
   styleUrl: './app.css'
 })
