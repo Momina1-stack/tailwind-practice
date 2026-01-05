@@ -3,28 +3,27 @@
     <ul class="navSportsDesktop w-full flex h-8 bg-[linear-gradient(180deg,#030a12,#444647_42%,#58595a)] mt-0.5 ml-0.5
       ">
       <li class="navItemsSports py-1 px-[15px] border border-white text-[16px]"
-        [ngClass]="{'bg-active-gradient': activeBottom === 'Cricket'}" (click)="setActivetab('Cricket')">
-        <a href="#" class="text-white">Cricket</a>
+       [ngClass]="{ 'bg-active-gradient text-black': activeBottom === 'Cricket','text-white': activeBottom !== 'Cricket'}" (click)="setActivetab('Cricket')">
+        <a href="#" class="text-inherit">Cricket</a>
       </li>
       <li class="navItemsSports py-1 px-[15px] border border-white text-[16px]"
-        [ngClass]="{'bg-active-gradient': activeBottom === 'Tennis'}" (click)="setActivetab('Tennis')">
-        <a href="#" class="text-white">Tennis</a>
+        [ngClass]="{'bg-active-gradient text-black': activeBottom === 'Tennis','text-white': activeBottom !== 'Tennis'}" (click)="setActivetab('Tennis')">
+        <a href="#" class="text-inherit">Tennis</a>
       </li>
       <li class="navItemsSports py-1 px-[15px] border border-white text-[16px]"
-        [ngClass]="{'bg-active-gradient': activeBottom === 'Soccer'}" (click)="setActivetab('Soccer')">
+        [ngClass]="{'bg-active-gradient': activeBottom === 'Soccer' ,'text-white': activeBottom !== 'Soccer'}" (click)="setActivetab('Soccer')">
+        <a href="#" class="text-inherit">Soccer</a>
+      </li>
+      <li class="navItemsSports py-1 px-[15px] border border-white text-[16px]"
+        [ngClass]="{'bg-active-gradient': activeBottom === 'Horse Racing' ,'text-white': activeBottom !== 'Horse Racing'}" (click)="setActivetab('Horse Racing')">
 
-        <a href="#" class="text-white">Soccer</a>
-      </li>
-      <li class="navItemsSports py-1 px-[15px] border border-white text-[16px]"
-        [ngClass]="{'bg-active-gradient': activeBottom === 'Horse Racing'}" (click)="setActivetab('Horse Racing')">
-
-        <a href="#" class="text-white">Horse Racing</a>
+        <a href="#" class="text-inherit">Horse Racing</a>
       </li>
     </ul>
   </div>
 </div>
 <!--game block -->
-<div class="game mb-25 block h-[593.667px] w-full relative  pl-[3px]  [@media(min-width:992px)]:top-30">
+<div class="game mb-25 block h-[593.667px] w-full relative pl-[10px] [@media(min-width:992px)]:top-30">
   <div class="app-market w-full">
     <div class="pr-[6px] mr-0 ml-0  h-[677px] w-full ">
       <div>
@@ -33,7 +32,7 @@
             <thead>
               <tr>
                 <th
-                  class="pt-1 pb-[5px] pr-[15px] pl-[15px] h-7 text-start text-[12px]  py-1.5 text-[#303030] border-b-2 border-[#dee2e6]">
+                  class="pt-1 pb-[5px] pr-[15px] pl-[20px] h-7 text-start text-[12px]  py-2 text-[#303030] border-b-2 border-[#dee2e6]">
                   Game</th>
                 <th colspan="2"
                   class="pt-1 pb-[5px] pr-[15px] pl-[15px] text-[12px] text-center py-1.5 text-[#303030] border-b-2 border-[#dee2e6]">
