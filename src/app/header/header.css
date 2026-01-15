@@ -5,3 +5,7 @@
 .scrollbar-none::-webkit-scrollbar {
   display: none;
 }
+.font-style{
+    font-family: 'Roboto Condensed', sans-serif !important;
+
+}

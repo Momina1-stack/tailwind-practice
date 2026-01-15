@@ -1,4 +1,5 @@
 @import "tailwindcss";
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
 @layer utilities {
   .bg-cricket-gradient {
     background: linear-gradient(-180deg, #f4b501 0%, #f68700 100%);
@@ -16,14 +17,9 @@
   }
 }
 
-@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
 
 
 body{
-  
-  font-family: "Roboto Condensed", sans-serif;
-  font-optical-sizing: auto;
-  font-weight: <weight>;
-  font-style: normal;
-
+  font-family: 'Roboto Condensed', sans-serif;
 }
