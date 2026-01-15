@@ -7,6 +7,6 @@
 @keyframes blinkColor {
   0%   { color: red; }
   50%  { color: yellow; }
-  100% { color: red; }
+  100% { color: green; }
 }
 

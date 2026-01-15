@@ -1,4 +1,4 @@
-<div class="main bg-rgb(33, 37, 41) w-full">
+<div class="main bg-rgb(33, 37, 41) w-full ">
   <div class="app-header font-[12px] w-full lg:fixed z-40">
     <div class="header bg-[linear-gradient(180deg,#000000,#000000_42%,#000000)] font-sans font-normal h-[100px] leading-18px overflow-x-clip pl-[5px] pr-[5px] relative text-start lg:h-20">
       <div class="first-div  w-full">
@@ -21,6 +21,7 @@
                       class="search-input-hide bg-white h-[38px] invisible lg:visible  transition-all duration-300 ease-in-out
                        overflow-hidden focus:outline-none" [ngClass]="isSearchOpen ? 'w-[180px]' : 'w-0'">
                     <div class="flex mt-3.5  ">
+                      <!-- <li><a href=""><i class="fa fa-search-plus" aria-hidden="true"></i></a></li> -->
                       <img src="search-icon.svg" alt=""
                         class="text-[rgb(255,255,255)] w-[27.88px] h-7 font-[24px] mb-4.5 ml-2.5 float-right mr-[10px] filter invert brightness-0 invisible lg:visible cursor-pointer shrink-0 " (click)="toggleSearch()">
                     </div>
@@ -34,7 +35,6 @@
                 <div class="btn w-full relative h-9 ">
                   <button routerLink="/login" class=" w-[90px] px-6 bg-[linear-gradient(-180deg,#f4b501_0%,#f68700_100%)] border-black max-w-[237px] h-[29px] font-[14px] text-[rgb(0,0,0)] text-sm lg:w-[105px] mr-8 rounded-[3.875px] pb-[2px]">LOGIN</button>
                 </div>
-             
               </div>
             </div>
           </div>
