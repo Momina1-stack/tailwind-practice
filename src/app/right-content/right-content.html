@@ -1,10 +1,9 @@
 <div class=" w-full pl-[3px] pt-[2px] mr-0 ml-0 relative z-15  [@media(min-width:992px)]:top-29 ">
   <div class="w-full">
-    <ul class="navSportsDesktop w-full flex h-8 bg-[linear-gradient(180deg,#030a12,#444647_42%,#58595a)] mt-0.5 ml-0.5
-      ">
+    <ul class="navSportsDesktop w-full flex h-[34px] bg-[linear-gradient(180deg,#030a12,#444647_42%,#58595a)] mt-0.5 ml-0.5 ">
       <li class="navItemsSports py-[4px] px-[15px] border border-white text-[16px]"
        [ngClass]="{ 'bg-active-gradient text-black': activeBottom === 'Cricket','text-white': activeBottom !== 'Cricket'}" (click)="setActivetab('Cricket')">
-        <a href="#" class="text-inherit">Cricket</a>
+        <a href="#" class="text-inherit flex justify-center items-center">Cricket</a>
       </li>
       <li class="navItemsSports py-1 px-[15px] border border-white text-[16px]"
         [ngClass]="{'bg-active-gradient text-black': activeBottom === 'Tennis','text-white': activeBottom !== 'Tennis'}" (click)="setActivetab('Tennis')">
@@ -45,8 +44,8 @@
                   2</th>
               </tr>
             </thead>
-            <tbody class="border-b-2 border-[#dee2e6] border-w-0  px-[32px]  h-[616.667px]">
-              <tr class="border-b border-[#dee2e6]">
+            <tbody class="border-b-2 border-[#dee2e6] border-w-0  px-[35px]  h-[616.667px]">
+              <tr class="border-b border-[#dee2e6] ">
                 <td class="px-[15px] flex justify-between items-center">
                   <div class="game-name">
                     <a href="" class="text-black text-[14px]"> Haryana v Railways
