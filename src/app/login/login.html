@@ -1,17 +1,49 @@
-     <div  class="  h-screen bg-[linear-gradient(180deg,#030a12,#444647_42%,#58595a)]
- flex items-center justify-center z-50">
-                  <div class="bg-white w-full max-w-[300px] lg:rounded-lg shadow-lg h-[207.81px] pt-[26px] pl-4 pr-4 pb-4 rounded">
-                    <input type="text" placeholder="User Name"
-                      class="w-full mb-2 mt-2 px-[9px] py-[4.5px]  text-[16.8px] border-black border-b lg:border border-black"/>
+<div class="min-h-screen bg-[linear-gradient(180deg,#030a12,#444647_42%,#58595a)]
+] flex items-center justify-center ">
 
-                    <input type="password" placeholder="Password"
-                      class="w-full mb-3 mt-4 px-[9px] py-[4.5px]  text-[16.8px] border-b border-black lg:border border-black" />
-                    <div class="login-btn flex items-center justify-center">
-                      <button
-                        class="w-full bg-[linear-gradient(-180deg,#f4b501_0%,#f68700_100%)] text-black font-semibold border-black border-b text-[16px] flex justify-center py-1.5 px-3 mt-4 lg:border border-black">
-                        Login
-                        <img src="/sign-in.svg" alt="" class="w-[15.6px] relative left-2 ">
-                      </button>
-                    </div>
-                  </div>
-                </div>
+  <!-- LOGIN CARD -->
+  <div class="bg-white w-[300px] rounded-md px-4 py-6 shadow-lg mb-35 mt-1">
+
+    <!-- Heading -->
+    <h4 class="text-center text-[24px] pl-3.5 font-normal ">
+      LOGIN
+      <i class="fas fa-hand-point-down"></i>
+      <!-- <i class="fas fa-hand-point-down mr-1"></i> -->
+    </h4>
+
+    <form autocomplete="off" novalidate>
+
+      <!-- Username -->
+      <div class="relative mb-4">
+        <input
+          type="text"
+          placeholder="User Name"
+          class="w-full h-[38px] border border-[#cfd4da] rounded-sm px-2 text-[16.8px]
+                 focus:outline-none focus:border-gray-700 placeholder:text-gray-600"
+        />
+        <i class="fas fa-user absolute right-2 top-[12px] text-[15px] text-black"></i>
+      </div>
+
+      <!-- Password -->
+      <div class="relative mb-4">
+        <input
+          type="password"
+          placeholder="Password"
+          class="w-full h-[38px] border border-[#c4c8cd] rounded-sm px-2 text-[16.8px]
+                 focus:outline-none focus:border-gray-700 placeholder:text-gray-600 " />
+        <i class="fas fa-eye-slash absolute right-3 top-[12px] text-[15px] text-black cursor-pointer"></i>
+      </div>
+
+      <!-- Button -->
+      <button
+        type="submit"
+        class="w-full relative top-1  h-[39px] rounded-sm text-[16px] font-medium
+               bg-gradient-to-b from-[#f4b501] to-[#f68700]
+               border border-black text-black flex items-center justify-center gap-2 ">
+        Login
+        <i class="fas fa-sign-in-alt"></i>
+      </button>
+
+    </form>
+  </div>
+</div>

@@ -1,0 +1,11 @@
+.time-cricket-banner {
+    background: linear-gradient(0deg,#0000001a,#00000073),
+                url('/CricketBanner.fa7d242575eddf8f.jpg') !important;
+    background-size: 408px 90px !important;
+    background-repeat: no-repeat !important; 
+    background-position: left top;
+}
+  .bg-active-gradient {
+    background: linear-gradient(-180deg, #f4b501 0%, #f68700 100%);
+    color: black !important;
+  }

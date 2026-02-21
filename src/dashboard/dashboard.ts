@@ -6,10 +6,11 @@ import { RightContent } from "../app/right-content/right-content";
 import { GameContainer } from "../app/game-container/game-container";
 import { AppCasino } from "../app/app-casino/app-casino";
 import { Footer } from "../app/footer/footer";
+import { Rule } from "../app/rule/rule";
 
 @Component({
   selector: 'app-dashboard',
-  imports: [Header, Navbar, Sidebar, RightContent, GameContainer, AppCasino, Footer],
+  imports: [Header, Navbar, Sidebar, RightContent, GameContainer, AppCasino, Footer, Rule],
   templateUrl: './dashboard.html',
   styleUrl: './dashboard.css',
 })

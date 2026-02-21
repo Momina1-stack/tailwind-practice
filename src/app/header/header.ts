@@ -1,6 +1,7 @@
 import { NgClass,NgIf} from '@angular/common';
 import { Component } from '@angular/core';
 import { RouterLink } from "@angular/router";
+import { Modal } from '../modal';
 
 @Component({
   selector: 'app-header',
@@ -29,5 +30,12 @@ export class Header {
 
   closeLogin() {
     this.showLoginForm = false;
+  }
+
+
+  constructor(private modalService: Modal) {}
+
+  openModal() {
+    this.modalService.open();
   }
 }

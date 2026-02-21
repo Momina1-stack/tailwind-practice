@@ -1,0 +1,153 @@
+<!-- <div class="modal block fixed top-0 left-0 z-76 h-full w-full overflow-x-hidden overflow-y-auto min-[576px]:[--bs-modal-margin:1.75rem] min-[576px]:[--bs-modal-box-shadow:0_.5rem_1rem_rgba(0,0,0,.15)]">
+<div class="modal-dialog transform-none transition-transform duration-300 ease-out -translate-y-[50px]
+lg:w-[800px] sm:w-[800px] sm:mx-auto sm:my-[1%] relative  min-[992px]:mx-auto! min-[992px]:w-[800px]
+">
+<div class="modal-content relative flex flex-col w-full pointer-events-auto bg-white bg-clip-padding rounded-0 top-12">
+<div class="modal-header h-[50px] flex justify-between shrink-0 items-center p-3 border border-[#dee2e6] bg-linear-to-b from-neutral-900 via-black to-neutral-800 ">
+<h1 class="modal-title mb-0 leading-normal text-[20px] text-white">Rules</h1>
+  <button class="close bg-none border-0 text-white text-2xl p-0 transform-none">
+    <span>X</span>
+
+  </button>
+
+</div>
+ <div class="modal-body p-3 leading-[18px] text-[12px] text-gray-600">
+      <div>
+        <div>
+          <br>
+          <b class="text-black font-bold">MARKET INFORMATION</b>
+          <br>
+          <br>
+          For further information please see
+          <a href="" class="text-blue-600 underline">Rules & Regs</a>
+          .
+          <br>
+          <br>
+          Who Will this match end with scores tied? At the scheduled start all unmatched bets will be cancelled and this
+          market turned <b class="text-black">IN PLAY</b>. This market will not be actively managed therefore it is the
+          responsibility of all customers to manage their own positions. If scores (including a derived target score
+          using the Duckworth Lewis method) are deemed tied at the completion of both innings then this market will be
+          settled as Yes. An Abandoned Match or No Result will result in this market being void. For the avoidance of
+          doubt, if scores are tied at the completion of both innings then any tie breaker that may be used to determine
+          a winner including, but not limited to, bowl outs, Super Overs, one-over eliminators, losing fewer wickets,
+          run rates, coin toss, higher group position does not count for the purposes of this market.
+        </div>
+        <br>
+        This is a <a class="text-blue-500 underline">cross-matching</a> market.
+        <br>
+        <br>
+        Customers should be awar e that:
+        <b>
+          <br>
+          <br>
+          <li class="text-black">
+            Transmissions described as “live” by some broadcasters may actually be delayed and that all in-play matches
+            are not necessarily televised.
+          </li>
+          <br>
+          <li class="text-black">
+            The extent of any such delay may vary between customers, depending on the set-up through which they are
+            receiving pictures or data.
+          </li>
+        </b>
+        <br>
+        <br>
+        <b class="text-black">BET IN-PLAY</b>
+        <br>
+        <br>
+        Australian customers call Telbet to bet in-play on this market – call <b class="text-black">132BET (132238)</b>
+        <br>
+        <br>
+      </div>
+    </div>
+</div>
+</div>
+
+</div> -->
+
+
+<!-- Modal Wrapper -->
+<div
+  *ngIf="isOpen"
+  class="fixed inset-0 z-50 bg-black/30 flex justify-center items-start overflow-hidden"
+>
+  <!-- Modal Dialog -->
+  <div
+    class="bg-white w-full max-w-[90%] lg:max-w-[1140px]
+           sm:h-[80vh] md:h-[50vh] md:bottom-6 max-h-[calc(96vh-47px)]
+           flex flex-col rounded-none relative mt-6"
+  >
+    <!-- Modal Header -->
+    <div
+      class="flex items-center justify-between px-3 py-2
+             bg-black text-white h-[50px]
+             border-b border-gray-300 flex-shrink-0"
+    >
+      <h1 class="text-[20px] leading-6">Rules</h1>
+      <button
+        class="text-white text-3xl p-0 border-none"
+        aria-label="Close"
+        (click)="close()"
+      >
+        &times;
+      </button>
+    </div>
+
+    <!-- Modal Body (SCROLLABLE) -->
+    <div
+      class="flex-1 overflow-y-auto p-[12px]
+             leading-[18px] text-[12px] text-gray-600"
+    >
+      <div>
+        <br />
+        <b class="text-black font-bold">MARKET INFORMATION</b>
+        <br /><br />
+
+        For further information please see
+        <a href="" class="text-blue-600 underline">Rules & Regs</a>.
+        <br /><br />
+
+        Who Will this match end with scores tied? At the scheduled start all
+        unmatched bets will be cancelled and this market turned
+        <b class="text-black">IN PLAY</b>. This market will not be actively
+        managed therefore it is the responsibility of all customers to manage
+        their own positions. If scores (including a derived target score using
+        the Duckworth Lewis method) are deemed tied at the completion of both
+        innings then this market will be settled as Yes. An Abandoned Match or No
+        Result will result in this market being void. For the avoidance of doubt,
+        if scores are tied at the completion of both innings then any tie breaker
+        that may be used to determine a winner including, but not limited to,
+        bowl outs, Super Overs, one-over eliminators, losing fewer wickets, run
+        rates, coin toss, higher group position does not count for the purposes
+        of this market.
+
+        <br /><br />
+        This is a
+        <a class="text-blue-500 underline">cross-matching</a> market.
+        <br /><br />
+
+        Customers should be aware that:
+        <br /><br />
+
+        <li class="text-black">
+          Transmissions described as “live” by some broadcasters may actually be
+          delayed and that all in-play matches are not necessarily televised.
+        </li>
+        <br />
+
+        <li class="text-black">
+          The extent of any such delay may vary between customers, depending on
+          the set-up through which they are receiving pictures or data.
+        </li>
+
+        <br /><br />
+        <b class="text-black">BET IN-PLAY</b>
+        <br /><br />
+
+        Australian customers call Telbet to bet in-play on this market – call
+        <b class="text-black">132BET (132238)</b>
+        <br /><br />
+      </div>
+    </div>
+  </div>
+</div>
